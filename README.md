@@ -14,9 +14,9 @@ innovative musical works.
 ### 01 - Introduction
 - Advanced programming concepts and server architecture
 - **Code files:**
-  - `PMB01 - Buses.scd` - Audio buses and signal routing
-  - `PMB01 - Patterns.scd` - Advanced pattern techniques
-  - `PMB01 - Demand.scd` - Demand-rate UGens and control
+  - `Buses.scd` - Audio buses and signal routing
+  - `Patterns.scd` - Advanced pattern techniques
+  - `Demand.scd` - Demand-rate UGens and control
 - PMB01 - Introduction.pdf
 
 ### 02 - Granularity
