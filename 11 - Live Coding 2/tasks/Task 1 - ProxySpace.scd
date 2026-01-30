@@ -34,7 +34,7 @@ p.fadeTime = 2;
 ~lfn.stop(3);
 
 // process it
-~verb = { GVerb.ar(HPF.ar(~lfn.ar[0], LFNoise0.ar(7).range(10,4000))) }; ~verb.play;
+~verb = { GVerb.ar(HPF.ar(~lfn.ar[0], LFNoise0.ar(7).range(10,4000), 1)) }; ~verb.play;
 
 // use the lfn as modulation source
 ~snd = { PMOsc.ar(200!2, ~lfn.ar.linlin(-1,1,100,200), 1, mul:0.2) }; ~snd.play

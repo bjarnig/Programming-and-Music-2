@@ -59,11 +59,13 @@ a.fadeTime = 2;
 a.play;
 
 (
+
 a[1] = \set -> Pbind(
     \dur, Prand([0.2, 0.5, 0.25, 0.125], inf),
     \freq, Pwhite(50, 1500, inf),
     \lop, Pwhite(300, 4000, inf)
 )
+
 );
 
 // modify the source while it plays

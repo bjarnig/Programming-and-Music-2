@@ -8,9 +8,7 @@ Ndef.clear
 
 a = Ndef(\na, { |freq=340, lop=2000| RLPF.ar(Blip.ar(freq, 150).fold2(SinOsc.ar([freq/20,freq/5])), lop) })
 
-a.fadeTime = 2
-
-a.play
+a.fadeTime = 2; a.play
 
 (
 

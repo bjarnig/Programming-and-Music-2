@@ -5,6 +5,7 @@
 ////////////////////////////////////////////////////////////////
 
 Ndef.clear;
+
 (
 
 // define control spces to be used -
@@ -44,8 +45,10 @@ p.morph(0.2, \yes, \no);
 // fade to preset yes
 p.xfadeTo(target: \yes, dur: 3);
 
-// fade from preset \yes to preset \no in an exponential manner
-({
+
+( // fade from preset \yes to preset \no in an exponential manner
+
+{
 	var steps = 1000;
 	var time = 10;
 
@@ -55,10 +58,11 @@ p.xfadeTo(target: \yes, dur: 3);
 	});
 	"Finished".postln;
 }.fork;
+
 )
 
 // or use gui
-// NdefPresetGui(p, numItems: 6);
+NdefPresetGui(p, numItems: 6);
 
 ////////// end
 
@@ -68,8 +72,8 @@ NdefPreset.all.clear;
 
 x = Ndef(\sparkling, {|freq=30,from=50,to=100|
 	var mod = PMOsc.ar(freq, LFDClipNoise.ar().range(from,to),1);
-	0.1 * HPF.ar(LPF.ar( LeastChange.ar(GravityGrid.ar(0, [12, 30, 60, 90]), mod),
-	LFNoise1.ar(3).range(80,150)),30) }).play;
+	0.4 * Splay.ar(HPF.ar(LPF.ar( LeastChange.ar(GravityGrid.ar(0, [12, 30, 60, 90]), mod),
+		LFNoise1.ar(3).range(80,4050)),30)) }).play;
 
 x.addSpec(\freq, [10, 60, \lin]);
 x.addSpec(\from, [20, 60, \lin]);
@@ -85,5 +89,7 @@ x.set(\freq, 60, \from, 50, \to, 100); y.addSet(\bgb);
 
 y.settings;
 
-y.morph(0.9, \bga, \bgb);
+y.morph(0.1, \bga, \bgb);
+
+NdefGui(Ndef(\sparkling))
 

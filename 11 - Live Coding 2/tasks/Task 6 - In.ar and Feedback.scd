@@ -14,11 +14,11 @@ Ndef(\filter).play;
 
 Ndef(\filter).set(\in, Ndef(\osc1).asMap)
 
-Ndef(\filter).map(\freq, Ndef(\osc2, {LFNoise1.ar(1!2).range(1,40)}));
+Ndef(\filter).map(\freq, Ndef(\osc2, {LFNoise1.ar(1!2).range(0.1,140)}));
 
 
 
-// 05 - Ndef feedback
+// activate Ndef feedback
 a = Ndef(\ep, { Ndef(\filter).ar }).play
 
 a[1] = \filter-> {|in| in + (Ndef.ar(\ep_fb) * 0.98)}
