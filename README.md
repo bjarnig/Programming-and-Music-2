@@ -9,8 +9,9 @@ complex musical systems using SuperCollider.
 The course covers granular synthesis, waveform generation, demand-rate UGens,
 binary operations, pulsar synthesis, waveset processing, wavetable synthesis,
 data sonification, chaos theory, L-systems, fractal mathematics, grammars,
-live coding with JitLib and Ndef, ProxySpace, and spatial audio techniques 
-for creating innovative musical works.
+live coding with JitLib and Ndef, ProxySpace, network music, spatial audio,
+CDP (Composer's Desktop Project) processing, FFT analysis, and ecosystemic
+composition for creating innovative musical works.
 
 ## Course Structure
 
@@ -147,28 +148,73 @@ for creating innovative musical works.
 - PMB16 - Live Coding, Approaches.pdf
 - Archive files: `pmb16.png`, `pmb16.zip`
 
-### 12 - Materials
-- Advanced techniques for material-based composition
-- **Data files:**
-  - Various code examples and audio samples
-  - Task-based exercises
-- PMB15 - Examples.pdf
-- Archive files: `pmb15.png`, `pmb15.zip`
+### 12 - Network Music
+- Network music, collaborative performance, and distributed systems
+- **Code files:**
+  - `Network.scd` - Network music fundamentals and OSC communication
+  - `Network-Advanced.scd` - Advanced networking and multi-machine setups
+- **Examples:**
+  - `Feedback.scd`, `MI.scd`, `Ndefs.scd`, `Proxychain.scd`
+  - `Steno.scd`, `Synthesis.scd`, `VST.scd`
+- PMB12 - Network Music.pdf
+- **Assignment 2:** PMB - Assignment 2 (2026).pdf
 
 ### 13 - Spatialisation
-- Spatial audio and multichannel composition
-- **Data files:**
-  - Multiple code examples and audio samples
-  - Spatial processing techniques
-- PMB16 - Spatialisation.pdf
+- Spatial audio, multichannel composition, and ambisonics
+- **Code files:**
+  - `Ambisonics.scd` - Ambisonic encoding and decoding
+  - `VBAP.scd` - Vector Base Amplitude Panning
+  - `PanAz.scd` - Azimuth panning techniques
+  - `Grainspat.scd` - Spatial granular synthesis
+  - `Specdiff.scd` - Spectral diffusion
+  - `BPF.scd` - Band-pass filter spatialisation
+  - `Examples.scd` - Spatialisation examples
+- PMB13 - Spatialisation.pdf
+- Archive files: `pmb13.png`
+
+### 14 - Live Examples
+- Live coding examples and workflow demonstrations
+- **Code files:**
+  - `Examples.scd` - Integrated live coding examples
+  - `Workflows.scd` - Live coding workflow patterns
+- PMB14 - Examples.pdf
+- **Assignment 2:** PMB - Assignment 2 (2026).pdf
+- Archive files: `pmb14.png`, `pmb14.zip`
+
+### 15 - CDP
+- Composer's Desktop Project: sound transformation and processing
+- **Code files:**
+  - `CDP.scd` - CDP integration with SuperCollider
+- PMB09 - CDP.pdf
+- Archive files: `pmb15.png`, `pmb15.zip`
+
+### 16 - CDP2
+- Advanced CDP techniques and cross-synthesis
+- **Code files:**
+  - `CDP2.scd` - Advanced CDP processing
+  - `CDPCross.scd` - Cross-synthesis with CDP
+  - `CDPGui.scd` - Graphical interface for CDP workflows
+- PMB16 - CDP 2.pdf
 - Archive files: `pmb16.png`, `pmb16.zip`
+
+### 17 - Analysis
+- Spectral analysis, FFT, and ecosystemic composition
+- **Code files:**
+  - `FFT.scd` - Fast Fourier Transform analysis
+  - `Listening.scd` - Machine listening techniques
+  - `Triggers.scd` - Trigger-based event detection
+  - `NRT.scd` - Non-real-time processing
+  - `Cross.scd` - Cross-synthesis and convolution
+  - `Ecosystemics.scd` - Ecosystemic and autonomous composition
+- PMB17 - Analysis.pdf
+- Archive files: `pmb17.png`, `pmb17.zip`
 
 ## Assignments
 
 The course includes two major assignments:
 
 - **Assignment 1** (Section 07 - Chaos): City data sonification project using chaotic systems
-- **Assignment 2** (Section 11 - Live Approaches): Live coding performance project
+- **Assignment 2** (Sections 12/14 - Network Music / Live Examples): Network music and live coding performance project (2026)
 
 ## Resources
 
