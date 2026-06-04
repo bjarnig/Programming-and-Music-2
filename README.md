@@ -126,11 +126,12 @@ composition for creating innovative musical works.
 - PMB13 - Live Coding.pdf
 - Archive files: `pmb13.png`, `pmb13.zip`
 
-### 11 - Live Approaches
+### 11 - Live Coding 2
 - Advanced live coding approaches and techniques
 - **Code files:**
   - `Ndef.scd` - Ndef (Node Definition) usage
-  - `ProxySpace.scd` - ProxySpace environments
+  - `Processing.scd` - Live processing of audio sources
+  - `Systems.scd` - Building live coding systems
   - `Steno.scd` - Steno live coding language
   - `Additional.scd` - Additional live coding techniques
 - **Tasks:**
@@ -209,12 +210,58 @@ composition for creating innovative musical works.
 - PMB17 - Analysis.pdf
 - Archive files: `pmb17.png`, `pmb17.zip`
 
+### 18 - FluCoMa
+- Fluid Corpus Manipulation toolkit for analysis and corpus-based work
+- **Code files (`code/flucoma/atomic`):**
+  - `buffer-descriptors.scd` - Buffer-based audio descriptors
+  - `realtime-descriptors.scd` - Real-time descriptor extraction
+  - `decomposition.scd` - Signal decomposition (HPSS, sines, transients)
+  - `slicers.scd` - Onset and novelty slicing
+- **Code files (`code/flucoma/methods`):**
+  - `corpus-building.scd` - Building a corpus with MFCC descriptors
+  - `sound-browser.scd` - Browsing a corpus interactively
+  - `cross-synthesis.scd` - Corpus-based cross-synthesis
+  - `decomposition-compositional.scd` - Decomposition for composition
+  - Supporting `sounds/` directory and `corpus_mfcc.json`
+- PMB18 - FluCoMa.pdf
+- **Assignment 3:** PMB - Assignment 3 (2026).pdf
+
+### 19 - ML
+- Machine learning for sound: classification, regression and clustering
+- **Code files:**
+  - `Flucoma - Classification.scd` - Classifying sounds with FluCoMa
+  - `Flucoma - Regressor.scd` - Regression with FluCoMa
+  - `Custom - Regressor.scd` - Building a custom regressor
+- **`code/atomic` walkthrough:**
+  - `01-dataset.scd` - Datasets and labelling
+  - `02-scaling.scd` - Feature scaling
+  - `03-reduction.scd` - Dimensionality reduction
+  - `04-clustering.scd` - Clustering
+  - `05-supervised.scd` - Supervised learning
+  - `tiny_ds.json` - Example dataset
+- PMB19 - ML.pdf
+
+### 20 - Complexity
+- Complex systems: cellular automata, physical and agent-based models
+- **Code files:**
+  - `CA.scd`, `LifeCA.scd`, `WolframCA.scd`, `AdditiveCA.scd` - Cellular automata
+  - `Boids.scd` - Flocking / boids
+  - `BouncingBalls.scd`, `TraerPhysics.scd`, `TraerPhysicsExtended.scd` - Physical modelling
+  - `Kuramoto.scd` - Coupled oscillator synchronisation
+  - `Lorenz.scd` - Lorenz attractor
+  - `Networks.scd` - Network-based systems
+  - `GeneticBasics.scd`, `GeneticBuffer.scd` - Genetic algorithms
+  - Supporting `samples/` directory
+- PMB20 - Complexity.pdf
+- **Assignment 3:** PMB - Assignment 3 (2026).pdf
+
 ## Assignments
 
-The course includes two major assignments:
+The course includes three major assignments:
 
 - **Assignment 1** (Section 07 - Chaos): City data sonification project using chaotic systems
 - **Assignment 2** (Sections 12/14 - Network Music / Live Examples): Network music and live coding performance project (2026)
+- **Assignment 3** (Sections 18/20 - FluCoMa / Complexity): Machine learning and complex systems project (2026)
 
 ## Resources
 
