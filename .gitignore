@@ -1,4 +1,37 @@
-*.key
-- assignment 1 -\ 
-- assignment 2 -
+# Ignore everything by default
+*
+
+# But allow these file types
+!*.scd
+!*.pdf
+
+# Allow essential project files
+!README.md
+!LICENSE
+!.gitignore
+
+# Allow directories (so git can traverse them)
+!*/
+
+# Slidev decks: one .md per class folder, per-class figures, and shared/ which
+# is a Slidev addon (styles + shiki setup) layered on top of the seriph theme
+!*.md
+!shared/**
+!**/public/**
+!package.json
+!package-lock.json
+!deck
+
+# Generated: builds, exported handouts and deps are never committed.
+# Handouts go to <class>/dist/, so the tracked original .pdf files survive.
+node_modules/
+dist/
+.slidev/
+*.local
+
+# Exclude archive folder
 _/
+
+# Student work and evaluation letters never enter the repo
+- assignment */
+Evaluations/

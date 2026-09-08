@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#141414">
+  <defs><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
+  <text x="225" y="40" text-anchor="middle" font-weight="700">instrument paradigm</text>
+  <text x="675" y="40" text-anchor="middle" font-weight="700">player paradigm</text>
+  <g fill="none" stroke="#141414" stroke-width="2">
+    <rect x="40" y="90" width="150" height="70" rx="6"/>
+    <rect x="260" y="90" width="150" height="70" rx="6"/>
+    <path d="M190 125 H260" marker-end="url(#b)"/>
+    <path d="M335 160 V230" marker-end="url(#b)"/>
+    <rect x="490" y="90" width="150" height="70" rx="6"/>
+    <rect x="710" y="90" width="150" height="70" rx="6"/>
+    <path d="M640 112 H710" marker-end="url(#b)"/>
+    <path d="M710 138 H640" marker-end="url(#b)"/>
+    <path d="M565 160 V230" marker-end="url(#b)"/>
+    <path d="M785 160 V230" marker-end="url(#b)"/>
+  </g>
+  <text x="115" y="133" text-anchor="middle">performer</text>
+  <text x="335" y="133" text-anchor="middle">system</text>
+  <text x="335" y="262" text-anchor="middle" font-style="italic">sound</text>
+  <text x="565" y="133" text-anchor="middle">performer</text>
+  <text x="785" y="133" text-anchor="middle">system</text>
+  <text x="565" y="262" text-anchor="middle" font-style="italic">sound</text>
+  <text x="785" y="262" text-anchor="middle" font-style="italic">sound</text>
+  <text x="450" y="296" text-anchor="middle" font-size="18" fill="#555">after Rowe, Interactive Music Systems (1993)</text>
+</svg>

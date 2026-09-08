@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 290" width="900" height="290" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" fill="#141414">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
+  <g fill="none" stroke="#141414" stroke-width="2">
+    <rect x="30" y="110" width="200" height="70" rx="6"/>
+    <rect x="350" y="110" width="200" height="70" rx="6"/>
+    <rect x="670" y="110" width="200" height="70" rx="6"/>
+    <path d="M230 145 H350" marker-end="url(#a)"/>
+    <path d="M550 145 H670" marker-end="url(#a)"/>
+    <path d="M770 180 V240 H130 V180" marker-end="url(#a)"/>
+    <path d="M130 110 V60 H770 V110" stroke-dasharray="6 6" marker-end="url(#a)"/>
+  </g>
+  <text x="130" y="152" text-anchor="middle">microphone</text>
+  <text x="450" y="152" text-anchor="middle">signal processing</text>
+  <text x="770" y="152" text-anchor="middle">loudspeaker</text>
+  <text x="450" y="272" text-anchor="middle" font-style="italic">the room</text>
+  <text x="450" y="48" text-anchor="middle" font-style="italic" fill="#555">analysis fed back: RMS, centroid, density</text>
+</svg>
