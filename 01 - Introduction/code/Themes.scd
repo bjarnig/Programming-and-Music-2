@@ -6,8 +6,8 @@
 
 /* One short example per theme, so the whole year can be heard in the
    first class. Nothing here needs a sound of your own: the Systems
-   example reads ExampleFiles.apollo11, the sample that ships with
-   SuperCollider. */
+   example reads a11wlk01.wav, the sample that ships with SuperCollider
+   and turns up all over its help files. */
 
 Be careful with volume. SafetyNet can prevent harmful signals.
 
@@ -19,7 +19,7 @@ thisProcess.recompile;
 )
 
 ( // the sample that ships with SuperCollider, used by the Systems example
-~voice = Buffer.read(s, ExampleFiles.apollo11);
+~voice = Buffer.read(s, Platform.resourceDir +/+ "sounds/a11wlk01.wav");
 )
 
 
