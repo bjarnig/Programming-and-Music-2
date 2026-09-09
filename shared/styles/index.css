@@ -40,13 +40,19 @@
   text-rendering: optimizeLegibility;
 }
 
-/* Centered serif header + hairline rule (dark slides) */
+/* Centered header + hairline rule. Sans at demi bold, matching the title slide:
+   Palatino's thin strokes read soft at heading size, and the sans carries more ink
+   so it reads brighter on a projector without any colour change. Palatino is kept
+   where the deck speaks in another register: the section dividers and the quotations
+   on the light slides. Slightly smaller than the serif was, because the sans has the
+   larger x-height and sets optically bigger at the same nominal size. */
 .slidev-layout h1 {
-  font-family: var(--cwa-serif);
-  font-weight: 700;
+  font-family: var(--cwa-sans);
+  font-weight: 600;
+  letter-spacing: -0.005em;
   color: #fff;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: 0 auto 1.5rem;
   padding-bottom: 0.65rem;
   border-bottom: 1px solid var(--cwa-rule);
@@ -145,6 +151,10 @@
 }
 .slidev-layout .shot { display: flex; justify-content: center; margin-top: 0.5rem; }
 .slidev-layout .shot img { max-height: 19rem; }
+/* A diagram that IS the slide, rather than a figure under a quote: let width lead, since
+   these are wide and short, and .fig's 11.5rem height cap shrinks them to nothing. */
+.slidev-layout.light .shot { margin: 1.6rem 0 0; }
+.slidev-layout.light .shot img { max-height: none; width: 100%; }
 
 /* Code blocks: shiki's theme ships its own #121212 ground, which reads as an
    off-colour panel against --cwa-bg. Use a faint tint of the slide instead. */
