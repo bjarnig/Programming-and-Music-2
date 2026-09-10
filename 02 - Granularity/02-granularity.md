@@ -1,0 +1,527 @@
+---
+theme: seriph
+addons:
+  - ./shared
+title: Programming and Music 2 — 02 Granularity
+titleTemplate: '%s'
+layout: default
+class: title
+transition: slide-left
+colorSchema: dark
+favicon: /favicon.ico
+mdc: true
+---
+
+<div class="logos">
+  <img src="/figures/logo-001.png" alt="Institute of Sonology" />
+  <img src="/figures/logo-002.png" alt="Royal Conservatoire The Hague" />
+</div>
+
+<div class="deck-title">Granularity</div>
+
+<div class="sub">
+  Programming and Music 2
+  <a href="https://www.bjarni-gunnarsson.net">https://www.bjarni-gunnarsson.net</a>
+</div>
+
+<!--
+First class of the Material block. The four listening examples are not in this deck: play
+them from your own library at the slides that name them.
+-->
+
+---
+
+# Microsound
+
+**Microsound** is a term used to discuss extremely short time scales of sound, and the music composed with a focus on these scales.
+
+**Granular synthesis** is an example of a microsound-related activity.
+
+Granular synthesis uses large numbers of **grains** to create higher level sonorities. The magnitude of the task requires a computer algorithm, and is also well suited for implementing compositional methods.
+
+---
+
+# Microsound
+
+Perhaps the only synthesis technique not described as a set of equations.
+
+An **attitude**, not a specific activity, that involves building sounds using small particles of **10 to 100 ms**.
+
+> "Lends itself for experimentation with compositional methods, due to the relative lack of acoustic limitations (it always sounds good whatever you do)."
+
+<span class="note">Paul Berg</span>
+
+The term *microsound* was first used by **Xenakis**, and the synthesis method originally comes from his artistic vision.
+
+---
+class: light
+---
+
+# Xenakis
+
+> "Events such as the collision of hail or rain with hard surfaces, the song of cicadas in a summer field, a political crowd of dozens or hundreds of thousands of people... It is an event of great power and beauty in its ferocity. Then the impact between the demonstrators and the enemy occurs. ...Imagine, in addition, the reports of dozens of machine guns and the whistle of bullets adding their punctuations to the total disorder. The crowd is then rapidly dispersed, and after sonic and visual hell follows a detonating calm, full of despair, dust, and death."
+
+<div class="src">(Iannis Xenakis, Formalized Music)</div>
+
+---
+class: light
+---
+
+# Di Scipio
+
+> "Most of the richness and complexity of sound afforded by this approach stems from the fact that micro-time sonic design does not implicitly prescribe any particular acoustic model: it is the implementation of a compositional micro-level strategy which determines the kind of sound behavior modelled or produced. That is, what is implemented is a model describing how quanta of acoustic energy are distributed in the time-domain, and how the temporal organisation of those innumerable elementary sonic units may result in a global auditory image."
+
+<div class="src">(Agostino Di Scipio, Micro-time Sonic Design)</div>
+
+---
+
+# Time Scales
+
+For **Schoenberg** the smallest element of a piece is the **note**. With notes one can construct motives. Motives can then construct phrases, which can be used to construct themes, and from those one arrives at musical compositions.
+
+> "Smaller forms may be expanded by means of external repetitions, sequences, extensions, liquidations and broadening of connectives. The number of parts may be increased by supplying codettas, episodes, etc. In such situations, derivatives of the basic motive are formulated into new thematic units."
+
+<span class="note">Schoenberg, 1967</span>
+
+---
+
+# Time Scales of Music
+
+<div class="topics">
+1. <b>Infinite</b> &nbsp;the ideal time span of mathematical durations<br>
+2. <b>Supra</b> &nbsp;beyond that of an individual composition: months, years, decades<br>
+3. <b>Macro</b> &nbsp;overall musical architecture or form, in minutes or hours<br>
+4. <b>Meso</b> &nbsp;groupings of sound objects into hierarchies of phrase structures<br>
+5. <b>Sound object</b> &nbsp;a basic unit of musical structure, generalizing the note<br>
+6. <b>Micro</b> &nbsp;particles on a time scale down to the threshold of perception<br>
+7. <b>Sample</b> &nbsp;the atomic level of digital audio systems<br>
+8. <b>Subsample</b> &nbsp;fluctuations too brief to be properly perceived<br>
+9. <b>Infinitesimal</b> &nbsp;the ideal time span of mathematical durations
+</div>
+
+<span class="note">Curtis Roads, Microsound</span>
+
+---
+
+# Macro
+
+Top-down or bottom-up?
+
+The **top-down** approach considers form as a preconceived global plan, where the details are completed at later stages of the composition.
+
+The **bottom-up** approach considers form as the result of interaction between materials, where the overall form is brought forward by lower level relationships.
+
+For many, composition involves a **tension** between the top-down and bottom-up approaches.
+
+---
+
+# Meso
+
+Phrases and local structures.
+
+Sequences, combinations and transmutations that constitute musical ideas usually unfold on the **meso** level.
+
+They give rise to **sound masses**, **textures**, and **clouds** of sound objects.
+
+---
+
+# Sound Object
+
+The **note**, an elementary unit of composition in scores.
+
+The term *sound object* originates from **Pierre Schaeffer**, who used it for any sound whose origin was easily identifiable.
+
+Notes can usually be described by four main attributes: **pitch**, **timbre**, **dynamics** and **duration**.
+
+They involve generalization, as MIDI does, which is not always useful for discussing the inner life of sounds, or the possibilities in electronic music.
+
+---
+
+# Micro
+
+Lasting from the **threshold of perception** up to short sound objects lies the domain of microsound.
+
+Inaccessible until rather recently, microsound offers original options for composing sounds using the computer.
+
+**Transient events** happening on the micro level influence highly how we perceive sound. These do not always reach perception until they occur in masses, forming collected sound objects.
+
+---
+class: light
+---
+
+# Duration
+
+> "One of the most important properties of a sound is its duration. Certain sonic processes require a sufficient duration to unfold. For example, the sweep of the cutoff frequency of a filter is most effective on a timescale greater than 100 ms. When the duration of any sound is very short (e.g., less than 20 ms), it is perceived as a transient event, regardless of its inner structure. As the duration of an event shrinks toward 1 ms, its amplitude envelope affects its spectrum more than its waveform, due to the effects of convolution."
+
+<div class="src">(Curtis Roads)</div>
+
+---
+
+# Perception
+
+Sounds with a very short duration must be **greater in intensity** than longer ones in order to be perceived equally.
+
+The onset of one impulse rapidly succeeding another can **mask** the second one, and any following it. This contributes to the illusion of a continuous sound.
+
+---
+
+# Perception
+
+Pitch recognition is dependent on frequency, where the highest definition occurs in the **mid-range**.
+
+It is possible to hear microevents as short as **1 ms**. Such short sounds are mostly perceived as **clicks**, with a distinguishable timbre, amplitude and spatial position.
+
+---
+
+# Xenakis
+
+Conceives a granular vision for sound composition. Came up with the term **microsound** in 1960.
+
+Mentions **Gabor** in *Formalized Music*, but later refers to Einstein as his inspiration.
+
+*Concret PH* (1958) is made from recordings of burning charcoal, arranged in a dense and rich configuration with a simple macroform.
+
+*Analogique B* is created from granular sine tones projected on three dimensional **screens**, with representations for frequency, amplitude and time.
+
+---
+class: light
+---
+
+# Screens
+
+> "All sound is an integration of grains, of elementary sonic particles, of sonic quanta ... all sound, even continuous musical variation, is conceived as an assemblage of a large number of elementary sounds adequately disposed in time. In the attack, body, and decline of a complex sound, thousands of pure sounds appear in a more or less short interval of time ∆t..."
+
+<div class="fig"><img src="/figures/screens-000.png" /></div>
+
+<div class="src">(Iannis Xenakis, Formalized Music)</div>
+
+---
+layout: center
+class: divider
+---
+
+Xenakis, Concret PH (1958)
+
+<!--
+Play it. Recordings of burning charcoal, and nothing else. Ask what the smallest audible
+unit is before saying anything about grains.
+-->
+
+---
+class: light
+---
+
+# Stockhausen
+
+> "If the rate of beat is gradually increased beyond the time constant of the filter and the limits beyond which the ear can no longer differentiate, what started as a rhythmically repeated note becomes continuous. . . . We see a continuous transition between what might be called durational intervals which are characterized as rhythmic intervals and durational intervals characterized as pitch levels."
+
+<div class="src">(Karlheinz Stockhausen, 1955)</div>
+
+---
+
+# Stockhausen
+
+**Pitch and rhythm** can be considered as one and the same concept.
+
+The serial method applied to rhythm as well as pitch. Creating a scale of durations that is interesting both logically and perceptually remains a hard problem.
+
+---
+
+# One Generator, Two Perceptions
+
+The same impulse train, read at rising rates. Nothing changes but the rate.
+
+```supercollider {*|1-2|4-5|7-8|*}
+// up: a pulse becomes a tone
+{ Impulse.ar(Line.kr(1, 120, 15)) }.play;
+
+// down: a tone becomes a pulse again
+{ Impulse.ar(XLine.kr(1000, 1, 5)) }.play;
+
+// up and down, through the boundary twice
+{ Impulse.ar(EnvGen.kr(Env.new([1, 1000, 1], [5, 5]))) }.play;
+```
+
+<span class="q">At what rate did you stop counting and start hearing a pitch?</span>
+
+<!--
+Run the first one and say nothing. Somewhere around 20 Hz the room stops hearing rhythm.
+This is Stockhausen's sentence made audible, and it is the argument for the whole class.
+-->
+
+---
+
+# Curtis Roads
+
+Realized his first granular study in **1974** using the Music V synthesis language.
+
+Has written his own programs for granular synthesis, first with Algol, then C, and recently with **SuperCollider**.
+
+Author of many granular techniques such as **glisson**, **grainlet**, **trainlet** and **pulsar** synthesis. These are covered in detail in his book *Microsound*.
+
+<span class="note">Class 03 is built on that taxonomy.</span>
+
+---
+
+# Curtis Roads
+
+Has written many pieces with granular synthesis and microsound, such as *Nscor* (1980), *Half-life* (1999) and *Volt air* (2003).
+
+---
+
+# Horacio Vaggione
+
+Gives attention to the interaction between **algorithmic processes** and musical composition.
+
+The problem of **black box** algorithmic composition is that the only way to intervene is to edit the output. Vaggione thinks of *a plurality of diverse options* rather than a single algorithm.
+
+This allows the composer to envisage *direct actions*, or interventions, to interact with the algorithm.
+
+---
+
+# Horacio Vaggione
+
+Vaggione does not believe in *inner life* or *infinitesimal*, since these ideas concern space, while he sees things in the form of **time**.
+
+Time as **irreversible**. A sound cannot be seen in terms of periodicity, but as a dynamic, energetic phenomenon.
+
+The musical interest of a granular approach consists in the **musical treatment** of the elements present at the microscale.
+
+---
+layout: center
+class: divider
+---
+
+Vaggione, Points Critiques (2011)
+
+---
+layout: center
+class: divider
+---
+
+Blackburn, Petites étincelles (2015)
+
+---
+layout: center
+class: divider
+---
+
+Gunnarsson, Ubieties (2015)
+
+---
+
+# Granular Synthesis
+
+A **grain** is a microsonic event, typically lasting from 10 to 100 ms.
+
+Each grain has a **waveform** and an **envelope**. The waveform is often a small portion of a sampled sound, but it can also be synthetic.
+
+Thousands of grains are then played in succession, and they can also overlap, to form a higher level sound object.
+
+If *n* is the number of controls needed per grain, and *d* is the number of grains per second, then the total number of parameters is *n* times *d*. Since *n* is normally greater than ten, and *d* can be up to a thousand, a **global strategy of organization** is required.
+
+---
+
+# Granular Synthesis
+
+The characteristics of granular synthesis variants usually differ in the approach to **globally organizing** grains. The most important parameters are:
+
+- **Density** of grains
+- **Rate** of grain generation
+- **Regularity** of grain generation
+- **Duration** of each grain
+- **Frequency**, **amplitude** and **waveform** of each grain
+
+---
+class: light
+---
+
+# Grains
+
+<div class="shot"><img src="/figures/grains-000.png" /></div>
+
+<div class="src">(Curtis Roads, Microsound)</div>
+
+---
+
+# Granular Synthesis
+
+**Synchronous** granular synthesis is when each grain is generated at a regular interval or rate.
+
+**Quasi-synchronous** granular synthesis is when intervals are slightly deviated, creating irregularity in the grain stream.
+
+**Asynchronous** granular synthesis operates without regular intervals, and generates grain masses instead, by scattering grains according to a distribution algorithm.
+
+---
+
+# Granular Synthesis
+
+The product of density and grain length is often referred to as the **fill factor**.
+
+Density of grains can influence the perceived pitch of an event, and so can the grain envelope. In granular synthesis the control parameters are often related and **tightly coupled**.
+
+<span class="q">If two knobs always move together, how many knobs are there really?</span>
+
+---
+
+# One Grain, Four Envelopes
+
+The same sine grain under four different windows. Only the shape of the envelope changes.
+
+```supercollider {*|3-5|7-9|11-13|*}
+(
+// a rounded window: no click at either end
+SynthDef(\gauss, { |amp = 0.5, freq = 440, sustain = 0.1|
+	OffsetOut.ar(0, SinOsc.ar(freq) * EnvGen.ar(Env.sine(sustain, amp), doneAction: 2) ! 2);
+}).add;
+
+// a sharp attack and a long decay: the grain has a direction
+SynthDef(\perc, { |amp = 0.5, freq = 440, sustain = 0.1|
+	OffsetOut.ar(0, SinOsc.ar(freq) * EnvGen.ar(Env.perc(0.1, 0.9, amp), timeScale: sustain, doneAction: 2) ! 2);
+}).add;
+
+// the same, reversed: it arrives rather than departs
+SynthDef(\reversed, { |amp = 0.5, freq = 440, sustain = 0.1|
+	OffsetOut.ar(0, SinOsc.ar(freq) * EnvGen.ar(Env.perc(0.9, 0.1, amp), timeScale: sustain, doneAction: 2) ! 2);
+}).add;
+)
+```
+
+<span class="note">After Alberto de Campo, the Microsound chapter of the SuperCollider Book. The full set is in *TimeScales.scd*.</span>
+
+---
+class: light
+---
+
+# Grain Windows
+
+<div class="shot"><img src="/figures/windows-000.svg" /></div>
+
+<!--
+The envelope shape is used constantly in this course and almost never named. These are the
+ten in Windows.scd, drawn from the numbers the file actually produces. Rect is the one to
+play first, because the click at each edge is the whole argument for all the others.
+-->
+
+---
+
+# Ten Windows, One Grain
+
+The envelope is a buffer, and `GrainBuf` reads it as the grain's shape.
+
+```supercollider {*|1-8|10-13|15-18|*}
+// four come with SuperCollider, the rest are Envs or written out by hand
+~windows = (
+	rect:     Signal.rectWindow(1024),
+	hann:     Signal.hanningWindow(1024),
+	welch:    Signal.welchWindow(1024),
+	sine:     Env.sine(1, 1).discretize(1024),
+	expodec:  Env([1, 0.001], [1], \exp).discretize(1024),
+	rexpodec: Env([0.001, 1], [1], \exp).discretize(1024)
+);
+
+// each one becomes a one-channel buffer
+~envbufs = ();
+~windows.keysValuesDo { |k, w| ~envbufs[k] = Buffer.sendCollection(s, w, 1) };
+
+// and GrainBuf takes it as its ninth argument
+{ GrainBuf.ar(2, Impulse.kr(12), 0.09, ~wave.bufnum, 1, 0, 2, 0,
+	~envbufs[\rect].bufnum, mul: 0.3) }.play
+```
+
+<span class="note">`Env.welch` does not exist. `\welch` is a curve name for a segment, which is a different thing. All ten are in *Windows.scd*.</span>
+
+<!--
+Play rect, then hann, then swap back. The click is not a bug in the code, it is the
+waveform being cut mid-cycle, and every other window on the previous slide exists to
+avoid it. Then drop grdur to 4 ms and play rect against gauss: at that length the envelope
+is the spectrum.
+-->
+
+---
+
+# Reading a Buffer
+
+Three ways with the same UGen. The arguments are the technique.
+
+```supercollider {*|1-5|7-11|13-19|*}
+// straight through: the pointer follows a line across the buffer
+{	var buf = ~voice.bufnum;
+	TGrains.ar(2, Impulse.kr(10), buf, 1,
+		Line.kr(0, BufDur.kr(buf), BufDur.kr(buf), doneAction: 2), 0.2);
+}.play
+
+// an envelope drives both the read position and the grain size
+{	var buf = ~voice.bufnum, env = EnvGen.ar(Env([0, 1, 0.2, 0.8], [1, 2, 8]));
+	TGrains.ar(2, Impulse.kr(10), buf, 1, env, env);
+}.play
+
+// five layers, each with its own random rate and position
+{	var buf = ~voice.bufnum, trig = Impulse.kr(50);
+	Mix.fill(5, {
+		TGrains.ar(2, trig, buf, TRand.kr(0.5, 1.5, trig),
+			TRand.kr(0, BufDur.kr(buf), trig), 0.1, TRand.kr(-1, 1, trig), 0.1)
+	});
+}.play
+```
+
+<!--
+The whole of GrainUGens.scd is variations on these three moves: where you read, how fast,
+and how many at once. Play the second one twice, once with the envelope on both arguments
+and once with it only on position.
+-->
+
+---
+class: light
+---
+
+# Brassage
+
+<div class="fig tall"><img src="/figures/brassage-000.png" /></div>
+
+<div class="src">(from Computer Sound Design and Synthesis Techniques, Miranda)</div>
+
+---
+
+# Granular Techniques
+
+**Pitch-time changing.** Stretch or shrink the timescale of a sound without affecting its pitch.
+
+**Freezing.** Stopping the grain read pointer. A single grain is read repeatedly, effectively freezing the sound.
+
+**Deterministic selection.** The read pointer moves from left to right, in time order.
+
+**Random selection.** Scattering. The read pointer selects from random points in the sound file.
+
+---
+
+# Granular Techniques
+
+**Grain size variation.** Short grains induce noise into the signal.
+
+**Granulation with pitch-shifting.** Each grain is pitch-shifted by a random amount within a range set by the user.
+
+**Granulation with filtering.** Applying a band-pass filter to each grain, where the filter centre frequency is random within a range set by the user.
+
+<span class="note">Curtis Roads, Composing Electronic Music: A New Aesthetic</span>
+
+---
+layout: center
+class: divider
+---
+
+Exercises
+
+---
+
+# Exercises
+
+1. Create a **granular texture** that evolves from dense to sparse, with at least two different voices created with a granular UGen and multichannel expansion.
+
+2. Create a **movement** of granular sound controlled by audio rate waveforms, such as sine waves or `LFNoise`, mixing more than one buffer to read from.
+
+3. Experiment with **coupling parameters**, so that only two or three controls are mapped to all the granular controls used.
+
+4. Implement a **granular routine** where each grain is filtered, enveloped, speed-shifted and panned differently.
+
+<span class="workshop">- workshop -</span>
