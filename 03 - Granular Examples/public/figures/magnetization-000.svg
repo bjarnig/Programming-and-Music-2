@@ -94,6 +94,6 @@
 <path d="M856.0 247.3 L874.0 284.0" fill="none" stroke="#141414" stroke-width="2"/>
 <circle cx="874.0" cy="284.0" r="2.6" fill="#141414"/>
 <path d="M46.0 408.0 L886.0 408.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
-<text x="470.0" y="434.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">three independent choices, so six clouds from one parameter</text>
+<text x="470.0" y="434.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">three independent choices of frequency trajectory</text>
 <text x="470.0" y="456.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">after Roads, Microsound, figure 4.1</text>
 </svg>

@@ -38,5 +38,5 @@
 <text x="334.0" y="376.0" text-anchor="start" font-size="14" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">read every sample</text>
 <text x="320.0" y="398.0" text-anchor="end" font-size="13" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">■</text>
 <text x="334.0" y="398.0" text-anchor="start" font-size="14" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">fixed when the SynthDef compiles</text>
-<text x="470.0" y="440.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">eight of the ten are frozen at birth: that is the whole behaviour</text>
+<text x="470.0" y="440.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">eight of the ten are read once, when the grain is created</text>
 </svg>

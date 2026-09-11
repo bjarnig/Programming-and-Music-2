@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 440" width="940" height="440" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
 <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
-<text x="470.0" y="26.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">one emission engine; the species differ only in what is inside the particle</text>
+<text x="470.0" y="26.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">one emitter; the varieties differ in the contents of the particle</text>
 <rect x="56.0" y="58.0" width="220.0" height="168.0" rx="4" fill="none" stroke="#555" stroke-width="1.7" stroke-dasharray="5 4"/>
 <text x="166.0" y="82.0" text-anchor="middle" font-size="14" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">shared by all four</text>
 <text x="166.0" y="108.0" text-anchor="middle" font-size="14" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">duration</text>
@@ -34,5 +34,5 @@
 <text x="660.0" y="318.0" text-anchor="start" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">a pulsaret, then</text>
 <text x="660.0" y="336.0" text-anchor="start" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">a measured silence</text>
 <path d="M56.0 396.0 L856.0 396.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
-<text x="470.0" y="422.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">learn the first and the other three cost almost nothing</text>
+<text x="470.0" y="422.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">the parameters carry over from one variety to the next</text>
 </svg>

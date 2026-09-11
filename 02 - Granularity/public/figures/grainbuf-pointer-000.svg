@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 468" width="940" height="468" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
 <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker><marker id="s" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5"><circle cx="5" cy="5" r="4" fill="#141414"/></marker></defs>
-<text x="470.0" y="24.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">pos walks the buffer; the trigger decides when you hear it</text>
+<text x="470.0" y="24.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">pos gives the position in the buffer; the trigger gives the time</text>
 <text x="190.0" y="84.0" text-anchor="end" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">forward</text>
 <rect x="208.0" y="62.0" width="452.0" height="34.0" rx="3" fill="none" stroke="#555" stroke-width="1.5"/>
 <text x="676.0" y="76.0" text-anchor="start" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">rises steadily</text>
@@ -83,6 +83,6 @@
 <path d="M437.4 310.0 Q 331.2 296.0 224.9 310.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="2 3"/>
 <path d="M224.9 317.0 L224.9 345.0" fill="none" stroke="#141414" stroke-width="2.2"/>
 <path d="M120.0 402.0 L820.0 402.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
-<text x="470.0" y="428.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">the pointer's speed is independent of the grain rate</text>
+<text x="470.0" y="428.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">the speed of the read position is independent of the grain rate</text>
 <text x="470.0" y="450.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">after Roads, Microsound, pages 191 and 199</text>
 </svg>

@@ -227,9 +227,9 @@ The serial method applied to rhythm as well as pitch. Creating a scale of durati
 
 ---
 
-# One Generator, Two Perceptions
+# Rate and Perception
 
-The same impulse train, read at rising rates. Nothing changes but the rate.
+The rate of an impulse train is swept upward, then downward, then both.
 
 ```supercollider {*|1-2|4-5|7-8|*}
 // up: a pulse becomes a tone
@@ -242,7 +242,7 @@ The same impulse train, read at rising rates. Nothing changes but the rate.
 { Impulse.ar(EnvGen.kr(Env.new([1, 1000, 1], [5, 5]))) }.play;
 ```
 
-<span class="q">At what rate did you stop counting and start hearing a pitch?</span>
+<span class="q">At what rate does counting become hearing a pitch?</span>
 
 <!--
 Run the first one and say nothing. Somewhere around 20 Hz the room stops hearing rhythm.
@@ -360,13 +360,13 @@ The product of density and grain length is often referred to as the **fill facto
 
 Density of grains can influence the perceived pitch of an event, and so can the grain envelope. In granular synthesis the control parameters are often related and **tightly coupled**.
 
-<span class="q">If two knobs always move together, how many knobs are there really?</span>
+<span class="q">If two parameters always move together, how many parameters are there?</span>
 
 ---
 
-# One Grain, Four Envelopes
+# Grain Envelopes
 
-The same sine grain under four different windows. Only the shape of the envelope changes.
+The same sine grain is played under three envelope shapes.
 
 ```supercollider {*|3-5|7-9|11-13|*}
 (
@@ -405,9 +405,9 @@ play first, because the click at each edge is the whole argument for all the oth
 
 ---
 
-# Ten Windows, One Grain
+# Window Buffers
 
-The envelope is a buffer, and `GrainBuf` reads it as the grain's shape.
+`GrainBuf` reads the grain envelope from a buffer, passed as `envbufnum`.
 
 ```supercollider {*|1-8|10-13|15-18|*}
 // four come with SuperCollider, the rest are Envs or written out by hand
@@ -442,7 +442,7 @@ is the spectrum.
 
 # Reading a Buffer
 
-Three ways with the same UGen. The arguments are the technique.
+`TGrains` reads the buffer in three different ways below.
 
 ```supercollider {*|1-5|7-11|13-19|*}
 // straight through: the pointer follows a line across the buffer
@@ -489,11 +489,11 @@ that mapping worked through.
 
 # GrainBuf
 
-The UGen that granulates a **buffer**. Ten arguments, and one sentence in the help file that explains all of them.
+The UGen that granulates a **buffer**. It takes ten arguments, and its help file states one thing that governs all of them.
 
 > "All args except `numChannels` and `trigger` are polled at grain creation time."
 
-A grain reads every setting **once**, at the moment it is born, and then keeps those values until it dies. You cannot change a grain while it sounds.
+A grain reads every setting once, when it is created, and keeps those values until it ends. A grain cannot be changed while it is sounding.
 
 <span class="note">`GrainSin`, `GrainFM` and `GrainIn` behave the same way. `TGrains` is the older sibling with fewer arguments and no envelope control.</span>
 
@@ -501,7 +501,7 @@ A grain reads every setting **once**, at the moment it is born, and then keeps t
 class: light
 ---
 
-# Ten Arguments
+# Arguments
 
 <div class="shot"><img src="/figures/grainbuf-args-000.svg" /></div>
 
@@ -513,9 +513,9 @@ arguments.
 
 ---
 
-# One Grain at a Time
+# A Single Grain
 
-Before a cloud, a single grain, fired slowly enough to hear on its own.
+A single grain, emitted slowly enough to be heard on its own.
 
 ```supercollider {*|1-2|4-6|*}
 // one grain, roughly once a second, from a third of the way into the buffer
@@ -526,7 +526,7 @@ Before a cloud, a single grain, fired slowly enough to hear on its own.
 	~voice.bufnum, 1, 0.3) * 0.6 }.play
 ```
 
-<span class="q">Sweep the mouse left. Where does the grain stop being a sound and become a click?</span>
+<span class="q">At what duration does the grain stop being a sound and become a click?</span>
 
 <!--
 The answer is around 2 ms, and it is the same boundary as the first class: under 2 ms a
@@ -538,7 +538,7 @@ whatever the waveform inside it was.
 class: light
 ---
 
-# Polled at Birth
+# Grain Creation Time
 
 <div class="shot"><img src="/figures/grainbuf-poll-000.svg" /></div>
 
@@ -550,9 +550,9 @@ plainly that this is the single most common source of confusion with GrainBuf.
 
 ---
 
-# The Staircase, Heard
+# Position and Grain Size
 
-The same sweep twice. Only the grain size and the rate change.
+The same sweep of `pos` is used at two grain sizes and two rates.
 
 ```supercollider {*|1-2|4-5|*}
 // long grains, few of them: you hear eight fixed excerpts, not a scrub
@@ -562,13 +562,13 @@ The same sweep twice. Only the grain size and the rate change.
 { GrainBuf.ar(2, Impulse.kr(60), 0.05, ~voice.bufnum, 1, Line.kr(0, 1, 4)) * 0.3 }.play
 ```
 
-<span class="note">Smoothness is not a property of the UGen. It is what happens when the steps get small enough.</span>
+<span class="note">The steps remain in both cases. They become inaudible when they are small and frequent enough.</span>
 
 ---
 class: light
 ---
 
-# Where the Pointer Goes
+# Read Position
 
 <div class="shot"><img src="/figures/grainbuf-pointer-000.svg" /></div>
 
@@ -580,9 +580,9 @@ never draws it. This is that picture.
 
 ---
 
-# Four Ways to Move
+# Moving the Read Position
 
-`pos` is a fraction of the buffer, 0 to 1. Its speed has nothing to do with the grain rate.
+`pos` is a fraction of the buffer, from 0 to 1. Its speed is independent of the grain rate.
 
 ```supercollider {*|1-2|4-5|7-8|10-14|*}
 // forward, slower than real time: a time stretch
@@ -625,9 +625,9 @@ continuous mass.
 
 ---
 
-# Density, Heard
+# Density
 
-Same grain length throughout. Only the rate changes.
+The grain length is constant and the rate varies.
 
 ```supercollider {*|1-2|4-5|7-8|10-11|*}
 // sparse, fill factor 0.2: you can count them

@@ -31,13 +31,13 @@ here to name what is happening and to say why the four species belong together.
 
 ---
 
-# Four Species
+# Varieties of Particle Synthesis
 
-Last class was **the grain**: a waveform, an envelope, a duration, and a way of emitting them.
+The previous class covered **the grain**: a waveform, an envelope, a duration, and a way of emitting them.
 
-This class is the other three. **Glisson**, **trainlet** and **pulsar** are not separate techniques. They are the same emitter with something different inside the particle.
+This class covers **glisson**, **trainlet** and **pulsar**. Roads treats them as varieties of one method rather than as separate techniques: the emitter is the same, and what differs is the contents of the particle.
 
-Roads calls them **varieties of particle synthesis**, and gives each a chapter section of its own. The useful thing is what they share.
+Each has a section of its own in chapter 4 of *Microsound*.
 
 <span class="note">Curtis Roads, Microsound, chapter 4.</span>
 
@@ -45,7 +45,7 @@ Roads calls them **varieties of particle synthesis**, and gives each a chapter s
 class: light
 ---
 
-# One Engine
+# Shared Parameters
 
 <div class="shot"><img src="/figures/engine-000.svg" /></div>
 
@@ -59,7 +59,7 @@ species takes ten minutes rather than an hour.
 
 # Glisson
 
-A grain whose frequency **moves while it sounds**. In signal processing it is called a **chirp**.
+A grain whose frequency changes over its own duration. In signal processing this is called a **chirp**.
 
 Roads took it from Xenakis, who described each grain as a **vector** in a space of time, frequency and amplitude, rather than as a point. A vector has a direction, so the grain can glide.
 
@@ -84,7 +84,7 @@ out of one parameter. Our code does two of the six; the exercises ask for a thir
 
 # Glisson in Code
 
-Our version glisses a **recording** rather than a synthetic waveform, by putting a line on the playback rate.
+This implementation glisses a **recording** rather than a synthetic waveform, by applying a line to the playback rate.
 
 ```supercollider {*|3-5|6|*}
 SynthDef(\gliss, { |buf=0, start=0, amp=0.5, dur=0.3, pan=0, from=0.5, to=4.0|
@@ -101,9 +101,9 @@ SynthDef(\gliss, { |buf=0, start=0, amp=0.5, dur=0.3, pan=0, from=0.5, to=4.0|
 
 ---
 
-# A Cloud of Glissons
+# Glisson Clouds
 
-The cloud walks the buffer while every particle glides further than the one before.
+The read position advances through the buffer while the glissando range widens.
 
 ```supercollider {*|1|4-6|8-14|*}
 var dur = 0.02, overlap = 2.0, sample = ~voice;
@@ -124,13 +124,13 @@ Routine {
 }.play;
 ```
 
-<span class="q">Two `linlin` lines decide the whole shape of the cloud. Which magnetization pattern is this?</span>
+<span class="q">Two `linlin` lines set the shape of the cloud. Which magnetization pattern is this?</span>
 
 ---
 
 # Trainlet
 
-A particle that is a **short burst of impulses** rather than a waveform.
+A particle consisting of a **short burst of impulses** rather than a waveform.
 
 > "A trainlet is an acoustic particle consisting of a brief series or train of impulses. Like other particles, trainlets usually last between 1 to 100 ms."
 
@@ -142,7 +142,7 @@ Roads lists five parameters: **density** of the trainlets, their **attack time**
 
 # Trainlet in Code
 
-`Blip` is a band-limited impulse train, so the whole particle is one UGen.
+`Blip` is a band-limited impulse train, so the particle is a single UGen.
 
 ```supercollider {*|5|6|*}
 SynthDef(\trainlet, { |amp=1.0, dur=0.3, pan=0, density=20, harmonics=10|
@@ -165,9 +165,9 @@ every trainlet has the same spectral slope. Exercise 3 is the way in.
 
 # Pulsar
 
-A **pulsaret** followed by a measured **silence**. The silence is the point: pulsar particles never overlap.
+A **pulsaret** followed by a measured **silence**. Pulsar particles do not overlap, which is what distinguishes the method from granular synthesis.
 
-That separation buys two independent controls from one oscillator. The **period** sets the pitch, and the **pulsaret duration** sets a formant.
+The separation gives two independent controls. The **period** sets the fundamental, and the **pulsaret duration** sets a formant.
 
 <span class="note">Roads gives pulsar synthesis the longest section in the chapter, and it is the species with the most written about it.</span>
 
@@ -175,7 +175,7 @@ That separation buys two independent controls from one oscillator. The **period*
 class: light
 ---
 
-# Two Frequencies, One Oscillator
+# Fundamental and Formant
 
 <div class="shot"><img src="/figures/pulsar-000.svg" /></div>
 
@@ -188,7 +188,7 @@ cycle becomes formant-determining, and the contents of the duty cycle are arbitr
 
 # Pulsar in Code
 
-The whole technique is three lines, because `GrainBuf` already emits particles.
+`GrainBuf` already emits particles, so the implementation is three lines.
 
 ```supercollider {*|2|3|4|5|*}
 SynthDef(\pulsar, { |fund=10, form=100, amp=1.0, wavebuf, envbuf|
@@ -207,13 +207,13 @@ SynthDef(\pulsar, { |fund=10, form=100, amp=1.0, wavebuf, envbuf|
 
 # Grainlet
 
-The fourth species, and the one that is **not a sound**.
+The fourth variety, and the only one that does not describe a sound.
 
 > "The fundamental notion of grainlet synthesis is that any parameter of synthesis can be made dependent on (or linked to) any other parameter."
 
-There is no grainlet UGen and there could not be one. There is a grain, and a set of **rules** saying which of its parameters follow which.
+There is no grainlet UGen. There is a grain, and a set of **rules** stating which of its parameters depend on which.
 
-Roads' first case is the **wavelet** relationship: high grains short, low grains long. But he is explicit that the general case is the point.
+Roads' first case is the **wavelet** relationship, where high grains are short and low grains long. He is explicit that the general case is what matters.
 
 ---
 class: light
@@ -231,9 +231,9 @@ Linkage is how you get a large parameter space you can still steer.
 
 ---
 
-# One Link
+# A Single Linkage
 
-The same cloud twice. The only difference is one line of arithmetic.
+The same cloud is played with and without a single linkage.
 
 ```supercollider {*|1-6|8-14|*}
 // no linkage: frequency and duration chosen independently
@@ -254,13 +254,13 @@ Routine({
 }).play;
 ```
 
-<span class="q">Nothing was added. One number became a function of another. Why does the second one hold together?</span>
+<span class="q">One number became a function of another. Why does the second cloud cohere?</span>
 
 ---
 
-# Links as Data
+# Linkages as Data
 
-Written this way the rules are a **structure you can edit**, not statements buried in a loop.
+Written this way the linkages are a **structure**, rather than statements inside a loop.
 
 ```supercollider {*|1-6|8-17|19|*}
 ~links = (
@@ -290,12 +290,12 @@ Written this way the rules are a **structure you can edit**, not statements buri
 
 # Transformation and Reconstruction
 
-Two more files, and both are about a **recording** rather than a synthetic particle.
+Two further files, both concerning a **recording** rather than a synthetic particle.
 
 - *Graintrnsfrm.scd* transforms each grain on its way past: filtered, shifted, panned, one decision per particle
 - *Reconstruction.scd* takes a recording apart and puts it back together, and the interest is in **what survives**
 
-<span class="q">Granulate a voice and hand it back. What is still recognisably the voice, and at what grain size does that stop?</span>
+<span class="q">After granulation, what is still recognisably the voice, and at what grain size does that stop?</span>
 
 <!--
 The 40 ms figure from Roads is the one to have ready: under it, sampled files lose their

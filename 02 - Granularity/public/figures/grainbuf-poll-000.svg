@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 352" width="940" height="352" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
 <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker><marker id="s" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5"><circle cx="5" cy="5" r="4" fill="#141414"/></marker></defs>
-<text x="470.0" y="24.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">pos moves continuously, but each grain reads it once</text>
+<text x="470.0" y="24.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">pos moves continuously; each grain reads it once</text>
 <text x="104.0" y="70.0" text-anchor="end" font-size="14" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace">trigger</text>
 <path d="M120.0 66.0 L830.0 66.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
 <path d="M120.0 66.0 L120.0 44.0" fill="none" stroke="#141414" stroke-width="2"/>
@@ -50,7 +50,7 @@
 <text x="680.0" y="242.0" text-anchor="middle" font-size="12" font-family="Menlo, Monaco, Consolas, monospace" fill="#141414">0.150</text>
 <rect x="741.2" y="224.0" width="55.0" height="26.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
 <text x="768.8" y="242.0" text-anchor="middle" font-size="12" font-family="Menlo, Monaco, Consolas, monospace" fill="#141414">0.175</text>
-<text x="470.0" y="282.0" text-anchor="middle" font-size="14" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">measured: pos steps by 0.025 per grain, a staircase and not a sweep</text>
+<text x="470.0" y="282.0" text-anchor="middle" font-size="14" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">measured: pos advances by 0.025 per grain</text>
 <path d="M120.0 302.0 L820.0 302.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
-<text x="470.0" y="330.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">to make a grain change while it sounds, you cannot. You make the next one differently.</text>
+<text x="470.0" y="330.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">a grain cannot be changed once created; the next one is created differently</text>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 482" width="940" height="482" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
 <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
-<text x="470.0" y="26.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">any parameter can be made to depend on any other</text>
+<text x="470.0" y="26.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">any parameter may depend on any other</text>
 <circle cx="250" cy="104" r="46" fill="none" stroke="#141414" stroke-width="1.8"/>
 <text x="250.0" y="109.0" text-anchor="middle" font-size="14" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">frequency</text>
 <circle cx="250" cy="216" r="46" fill="none" stroke="#141414" stroke-width="1.8"/>
@@ -22,6 +22,6 @@
 <text x="282.0" y="172.0" text-anchor="start" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">which is what a wavelet does</text>
 <path d="M160.0 392.0 L780.0 392.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
 <text x="470.0" y="416.0" text-anchor="middle" font-size="14" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">a small circle marks an inverse link</text>
-<text x="470.0" y="442.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">grainlet synthesis is not a sound, it is a wiring diagram</text>
+<text x="470.0" y="442.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">grainlet synthesis describes dependencies rather than a sound</text>
 <text x="470.0" y="464.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">after Roads, Microsound, figure 4.3</text>
 </svg>
