@@ -475,6 +475,180 @@ and once with it only on position.
 class: light
 ---
 
+# Anatomy of a Grain
+
+<div class="shot"><img src="/figures/grain-anatomy-000.svg" /></div>
+
+<!--
+Roads' figure 3.1, redrawn, with his three periodicities from page 94 underneath. Point at
+each of the three and name the GrainBuf argument that sets it. The rest of this section is
+that mapping worked through.
+-->
+
+---
+
+# GrainBuf
+
+The UGen that granulates a **buffer**. Ten arguments, and one sentence in the help file that explains all of them.
+
+> "All args except `numChannels` and `trigger` are polled at grain creation time."
+
+A grain reads every setting **once**, at the moment it is born, and then keeps those values until it dies. You cannot change a grain while it sounds.
+
+<span class="note">`GrainSin`, `GrainFM` and `GrainIn` behave the same way. `TGrains` is the older sibling with fewer arguments and no envelope control.</span>
+
+---
+class: light
+---
+
+# Ten Arguments
+
+<div class="shot"><img src="/figures/grainbuf-args-000.svg" /></div>
+
+<!--
+Only trigger is live. Eight are frozen at birth. numChannels and maxGrains cannot even be
+changed after the SynthDef compiles, which catches people who try to make them synth
+arguments.
+-->
+
+---
+
+# One Grain at a Time
+
+Before a cloud, a single grain, fired slowly enough to hear on its own.
+
+```supercollider {*|1-2|4-6|*}
+// one grain, roughly once a second, from a third of the way into the buffer
+{ GrainBuf.ar(2, Impulse.kr(0.8), 0.08, ~voice.bufnum, 1, 0.3) * 0.6 }.play
+
+// the same grain, with its length under the mouse
+{ GrainBuf.ar(2, Impulse.kr(2), MouseX.kr(0.001, 0.2, \exponential),
+	~voice.bufnum, 1, 0.3) * 0.6 }.play
+```
+
+<span class="q">Sweep the mouse left. Where does the grain stop being a sound and become a click?</span>
+
+<!--
+The answer is around 2 ms, and it is the same boundary as the first class: under 2 ms a
+grain has more than 250 Hz of spectral spread, wider than a critical band, so pitch is gone
+whatever the waveform inside it was.
+-->
+
+---
+class: light
+---
+
+# Polled at Birth
+
+<div class="shot"><img src="/figures/grainbuf-poll-000.svg" /></div>
+
+<!--
+This is measured, not drawn from intuition: a ramp in the buffer, pos swept by a Line, and
+each grain came out holding a value 0.025 higher than the one before. A staircase. Say
+plainly that this is the single most common source of confusion with GrainBuf.
+-->
+
+---
+
+# The Staircase, Heard
+
+The same sweep twice. Only the grain size and the rate change.
+
+```supercollider {*|1-2|4-5|*}
+// long grains, few of them: you hear eight fixed excerpts, not a scrub
+{ GrainBuf.ar(2, Impulse.kr(2), 0.4, ~voice.bufnum, 1, Line.kr(0, 1, 4)) * 0.6 }.play
+
+// short grains, many of them: the steps are too small to hear separately
+{ GrainBuf.ar(2, Impulse.kr(60), 0.05, ~voice.bufnum, 1, Line.kr(0, 1, 4)) * 0.3 }.play
+```
+
+<span class="note">Smoothness is not a property of the UGen. It is what happens when the steps get small enough.</span>
+
+---
+class: light
+---
+
+# Where the Pointer Goes
+
+<div class="shot"><img src="/figures/grainbuf-pointer-000.svg" /></div>
+
+<!--
+Roads' three selection orders, page 199: deterministic progression, statistical evolution,
+random. He describes the granulator as a delay line with pointers moving through it, and
+never draws it. This is that picture.
+-->
+
+---
+
+# Four Ways to Move
+
+`pos` is a fraction of the buffer, 0 to 1. Its speed has nothing to do with the grain rate.
+
+```supercollider {*|1-2|4-5|7-8|10-14|*}
+// forward, slower than real time: a time stretch
+{ GrainBuf.ar(2, Impulse.kr(40), 0.08, ~voice.bufnum, 1, Line.kr(0, 1, 20)) * 0.4 }.play
+
+// frozen: one point, read over and over, under the mouse
+{ GrainBuf.ar(2, Impulse.kr(40), 0.08, ~voice.bufnum, 1, MouseX.kr(0, 1)) * 0.4 }.play
+
+// reversed: the pointer walks back while every grain still plays forwards
+{ GrainBuf.ar(2, Impulse.kr(40), 0.08, ~voice.bufnum, 1, Line.kr(1, 0, 12)) * 0.4 }.play
+
+// scattered inside a window that drifts
+(
+{	var trig = Impulse.kr(40), centre = Line.kr(0, 1, 20);
+	GrainBuf.ar(2, trig, 0.08, ~voice.bufnum, 1,
+		(centre + TRand.kr(-0.03, 0.03, trig)).clip(0, 1)) * 0.4
+}.play
+)
+```
+
+<!--
+The last one is Roads' statistical evolution: probabilistically left to right rather than
+strictly. Run the frozen one and move the mouse very slowly. That is the whole of freezing.
+-->
+
+---
+class: light
+---
+
+# Fill Factor
+
+<div class="shot"><img src="/figures/grain-density-000.svg" /></div>
+
+<!--
+Two numbers decide whether a cloud has holes in it, and they are not independent. Roads'
+own thresholds at a 25 ms grain: under 15 a second reads as rhythm, 15 to 25 flutters,
+25 to 50 loses the order of the grains, 50 to 100 becomes a texture band, over 100 a
+continuous mass.
+-->
+
+---
+
+# Density, Heard
+
+Same grain length throughout. Only the rate changes.
+
+```supercollider {*|1-2|4-5|7-8|10-11|*}
+// sparse, fill factor 0.2: you can count them
+{ GrainBuf.ar(2, Impulse.kr(10), 0.02, ~bikecat.bufnum, 1, LFNoise1.kr(0.3).range(0, 1)) * 0.5 }.play
+
+// covered, fill factor 1.0: the grains just meet
+{ GrainBuf.ar(2, Impulse.kr(50), 0.02, ~bikecat.bufnum, 1, LFNoise1.kr(0.3).range(0, 1)) * 0.4 }.play
+
+// packed, fill factor 2.0: the holes are gone
+{ GrainBuf.ar(2, Impulse.kr(100), 0.02, ~bikecat.bufnum, 1, LFNoise1.kr(0.3).range(0, 1)) * 0.3 }.play
+
+// or sweep the density and listen for where it closes up
+{ GrainBuf.ar(2, Impulse.kr(XLine.kr(4, 200, 15)), 0.02, ~bikecat.bufnum, 1, LFNoise1.kr(0.3).range(0, 1)) * 0.3 }.play
+```
+
+<span class="note">Everything in this section is in *GrainBuf.scd*, one block per slide.</span>
+
+---
+class: light
+---
+
 # Brassage
 
 <div class="fig tall"><img src="/figures/brassage-000.png" /></div>
