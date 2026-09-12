@@ -233,21 +233,63 @@ Pbindef(\ws, \playRate, 0.5, \startWs, Pn(Pseries(0, 4, 1000), inf)).play;
 
 # Wavetables
 
-A wavetable is a stored waveform read by an oscillator. `VOsc` reads a **range** of buffers and interpolates between them, so the waveform itself becomes a parameter.
+A wavetable is a **stored waveform** read by an oscillator. `Osc` reads one. `VOsc` reads a **fractional index** into a range of buffers and interpolates between them, so the waveform becomes a signal rather than a setting.
 
-```supercollider {*|1-2|4-6|8-9|*}
-// a set of tables is loaded from disk into consecutive buffers
-~wtb = Dictionary();
-SoundFile.collect(~tablepath).do { |sf| ~addWt.(sf.path, ~wtb, sf.path.split($/).last) };
+`VOsc` imposes three conditions, and breaks silently if any is unmet:
 
-// the index is a signal, so the waveform itself changes continuously
-{
-	var bufindex = LFNoise1.kr(0.5).range(0, 5) + ~wtb["tbl07"].bufnum;
-	VOsc.ar(bufindex, 100) ! 2 * 0.3;
-}.play
+- the buffers must be **consecutive** in number
+- they must all be the **same power-of-two size**
+- they must be in **wavetable format**, which `asWavetable` produces
+
+<span class="note">`asWavetable` returns twice as many samples as it is given, so the 4096-frame files in *tables/* become 8192-frame buffers.</span>
+
+---
+
+# Wavetables
+
+Thirteen single-cycle files, sorted by name and loaded into consecutive buffers.
+
+```supercollider {*|1-4|6-11|13-15|*}
+~tablePath = (PathName(thisProcess.nowExecutingPath)).pathOnly ++ "tables/";
+var files = SoundFile.collect(~tablePath ++ "*.wav").sort { |a, b|
+	a.path.split($/).last < b.path.split($/).last
+};
+
+~tables = files.collect { |sf|
+	var file = SoundFile.new, signal;
+	file.openRead(sf.path);
+	signal = Signal.newClear(file.numFrames);
+	file.readData(signal);
+	file.close;
+	Buffer.loadCollection(s, signal.asWavetable);
+};
+
+// check, because VOsc will simply be silent if this is false
+~tables.collect(_.bufnum).differentiate.drop(1).every(_ == 1)
 ```
 
-<span class="note">*Wavetables.scd* loads a set from disk and steps through it. The browser tool at <a href="https://slides.bjarni-gunnarsson.net/tools/wavetable/">slides.bjarni-gunnarsson.net/tools/wavetable</a> does the same thing without SuperCollider.</span>
+<span class="q">Sorting by filename puts wv10 before wv2. Does that matter here?</span>
+
+---
+
+# Wavetables
+
+```supercollider {*|1-2|4-5|7-8|10-13|*}
+// one table, read by Osc
+{ Osc.ar(~tables[0].bufnum, 110, 0, 0.2) ! 2 }.play
+
+// a fractional index: 3.5 is halfway between the fourth table and the fifth
+{ VOsc.ar(~tables[0].bufnum + 3.5, 110, 0, 0.2) ! 2 }.play
+
+// swept across the whole set over thirty seconds
+{ VOsc.ar(~tables[0].bufnum + Line.kr(0, 12, 30), 110, 0, 0.2) ! 2 }.play
+
+// the index modulated at audio rate, which moves the waveform
+// as fast as the waveform itself
+{ VOsc.ar(~tables[0].bufnum + SinOsc.ar(40).range(0, 12), 110, 0, 0.2) ! 2 }.play
+```
+
+<span class="note">*WavetableSet.scd* adds four detuned layers drifting through the set independently, and two tables written from scratch rather than loaded. The browser tool at <a href="https://slides.bjarni-gunnarsson.net/tools/wavetable/">slides.bjarni-gunnarsson.net/tools/wavetable</a> does the same morph without SuperCollider.</span>
 
 ---
 
@@ -256,7 +298,7 @@ SoundFile.collect(~tablepath).do { |sf| ~addWt.(sf.path, ~wtb, sf.path.split($/)
 - Run *DemandEnvGen.scd* first, then *DemandEx.scd*, which is the same idea further along
 - *BinaryEx.scd* and *BinaryOperations.scd* are a list to work through, not a sequence
 - *Wavesets.scd* and *WavesetsEx.scd* need a sound file of your own to be interesting
-- *Wavetables.scd* and *Youtube-Microsound.scd* are the two to leave for last
+- *Wavetables.scd*, *WavetableSet.scd* and *Youtube-Microsound.scd* are the ones to leave for last
 
 <span class="note">Take one waveform from class 04 and rebuild it here with demand-rate UGens. The point of the comparison is which of the two you can still read a week later.</span>
 
