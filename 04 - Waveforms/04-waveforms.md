@@ -600,13 +600,131 @@ A transfer function written into a buffer once, then read by `Shaper`. The curve
 <span class="note">All seven curves, and the check that `logistic` and `tanh` are the same function, are in *Shapers.scd*.</span>
 
 ---
+layout: center
+class: divider
+---
+
+Experiment
+
+---
+
+# Working at the Sample Level
+
+Non-standard synthesis has **no acoustic model to aim at**. There is nothing to realise, and no correct result to approach.
+
+What there is instead is a starting point, a change, and a listen. Luque points out that for Xenakis these techniques were only *"arbitrary starting points"*, and describes the *"somewhat limited timbral space of the non-standard approach"*.
+
+The working habits matter more here than in a synthesis method that models something.
+
+<span class="note">This is the part of the lineage that is practical rather than historical, and it is what separates this class from Composing with Algorithms 12, which takes the same people and asks what composing the waveform means.</span>
+
+---
+
+# A Seeded Accident
+
+A random generator finds good material and then loses it. A generator written by hand takes a **seed**, so the same number returns the same waveform.
+
+```supercollider {*|3-4|5-7|*}
+DynGenDef(\seeded, "
+@init
+r = _seed;
+@sample
+r = r * 1103515245 + 12345;
+r = r - floor(r / 2147483648) * 2147483648;
+c += 1;
+c >= _len ? (c = 0; v = (r / 2147483648) * 2 - 1);
+out0 = v;
+").send;
+```
+
+Two renders with seed 7 were **identical sample for sample**. Seed 8 gave an unrelated waveform.
+
+<span class="note">An accident you can return to is worth more than a new accident. Walk the seeds, keep the ones worth keeping.</span>
+
+---
+
+# Constraints
+
+A limit is a generator. Restricting the material forces the search into a part of the space that adding things will not reach.
+
+```supercollider {*|1-2|4-5|7-11|*}
+// only integers, so the amplitude has three values and nothing between them
+"c += 1; c >= _len ? (c = 0; v = floor(rand() * 3) - 1); out0 = v * 0.5;"
+
+// only one operation and one variable
+"w += _step; w > 1 ? w -= 2; out0 = w;"
+
+// no multiplication anywhere: addition, comparison and assignment only
+"a += _step;
+ a > 1 ? (a = -1; b += _step2);
+ b > 1 ? b = -1;
+ out0 = a + b > 1 ? (a + b - 2) : (a + b < -1 ? (a + b + 2) : (a + b));"
+```
+
+<span class="q">Which of these three could you have arrived at by adding to a sine?</span>
+
+---
+
+# Failure Modes
+
+At the sample level the usual failures are the edges of the technique rather than bugs, and all three are audible.
+
+**DC offset.** An unbounded walk drifts away from zero and stays there. Measured over 16384 samples: mean 0.04, ending at 0.08. Inaudible on small speakers and dangerous on large ones.
+
+**Aliasing.** Terms above Nyquist fold back down. They do not sound like a mistake, they sound like partials in the wrong places.
+
+**Blow-up.** Feedback above unity grows without limit. Keep the amplitude low and a `Limiter` after it while experimenting.
+
+---
+
+# Failure Modes
+
+```supercollider {*|1-2|4-5|7-8|*}
+// the drift, and the leak toward zero that fixes it
+"w += (rand() * 2 - 1) * _step; out0 = w * 0.1;"
+"w += (rand() * 2 - 1) * _step; w = w - (w * _leak); out0 = w * 0.1;"
+
+// see it rather than trust it
+{ var w = 0; Signal.newFrom(4096.collect { w = w + (1.0.rand2 * 0.01) }).plot }.value
+
+// aliasing, swept past Nyquist so the descent is audible
+{ DynGen.ar(1, \alias, params: [freq: 220, mult: Line.kr(1, 200, 20)]) * 0.2 ! 2 }.play
+```
+
+<span class="note">The leak brought the mean back from 0.04 to -0.001 on the same walk.</span>
+
+---
+
+# Sweeping a Parameter
+
+Rather than choosing a value, listen to the whole range once. The map is more useful than any point on it, and it is quicker than guessing.
+
+```supercollider {*|1-5|8-11|*}
+DynGenDef(\space, "
+c += 1;
+c >= _len ? (c = 0; v = floor(rand() * _levels) / (_levels - 1) * 2 - 1);
+out0 = v;
+").send;
+
+// two axes, swept slowly, so the whole space is heard in half a minute
+{ DynGen.ar(1, \space, params: [
+	len:    XLine.kr(3, 600, 30),
+	levels: Line.kr(2, 24, 30).round(1)
+]) * 0.3 ! 2 }.play
+```
+
+<span class="note">Everything in this section is in *Experiments.scd*.</span>
+
+---
 
 # Next Steps
 
-- Run *Shapes.scd*, *Demand.scd*, *Binary.scd*, *Gendy.scd*, *Instructions.scd*, *Wavesets.scd* and *Shapers.scd*
+- Run *Shapes.scd*, *Demand.scd*, *Binary.scd*, *Gendy.scd*, *Instructions.scd*, *Wavesets.scd*, *Shapers.scd*, *DynGen.scd* and *Experiments.scd*
 - Plot a shaper curve before playing it, and predict what the plot will sound like
 - Take one Gendy and reduce its parameters until you can hear what each one does
 - Build a waveform from a breakpoint set, then use the same set as an envelope
+- Walk twenty seeds of the same script and keep three
+- Write a script under a constraint of your own, and say what the constraint ruled out
 
 ---
 layout: center
