@@ -22,6 +22,10 @@
 !package-lock.json
 !deck
 
+# Wavetable and sample sets that a class file needs in order to run. Audio is
+# otherwise excluded, because the sample folders in this repo are large.
+!**/code/tables/*.wav
+
 # Generated: builds, exported handouts and deps are never committed.
 # Handouts go to <class>/dist/, so the tracked original .pdf files survive.
 node_modules/
