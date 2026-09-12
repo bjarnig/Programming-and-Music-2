@@ -60,8 +60,7 @@ thisProcess.recompile;
 // Modulo a Saw wave with a LFNoise1
 { Saw.ar([20, 10]).mod(LFNoise1.ar(1000)) * 0.1 }.play;
 
-/*  See also: */
-
+/*  See also:
 .fold2
 .wrap2
 .distort
@@ -89,3 +88,4 @@ thisProcess.recompile;
 .clip2
 .sumsqr
 .absdif
+*/

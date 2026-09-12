@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 400" width="940" height="400" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
+<text x="470.0" y="26.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">an envelope as an array, and the same envelope as a stream</text>
+<text x="190.0" y="84.0" text-anchor="end" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">Env</text>
+<text x="190.0" y="104.0" text-anchor="end" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">an array</text>
+<rect x="224.0" y="66.0" width="74.0" height="40.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="261" y="92" text-anchor="middle" font-size="15" font-family="Menlo, Monaco, Consolas, monospace">0</text>
+<rect x="316.0" y="66.0" width="74.0" height="40.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="353" y="92" text-anchor="middle" font-size="15" font-family="Menlo, Monaco, Consolas, monospace">1</text>
+<rect x="408.0" y="66.0" width="74.0" height="40.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="445" y="92" text-anchor="middle" font-size="15" font-family="Menlo, Monaco, Consolas, monospace">0.3</text>
+<rect x="500.0" y="66.0" width="74.0" height="40.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="537" y="92" text-anchor="middle" font-size="15" font-family="Menlo, Monaco, Consolas, monospace">0.8</text>
+<rect x="592.0" y="66.0" width="74.0" height="40.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="629" y="92" text-anchor="middle" font-size="15" font-family="Menlo, Monaco, Consolas, monospace">0</text>
+<text x="470.0" y="134.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">fixed in length, known in advance, read from beginning to end</text>
+<path d="M80.0 166.0 L860.0 166.0" fill="none" stroke="#a8a8a8" stroke-width="1"/>
+<text x="190.0" y="236.0" text-anchor="end" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">Dseq, Dbrown</text>
+<text x="190.0" y="256.0" text-anchor="end" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">a stream</text>
+<rect x="224.0" y="214.0" width="150.0" height="48.0" rx="3" fill="none" stroke="#141414" stroke-width="2.2"/>
+<text x="299.0" y="236.0" text-anchor="middle" font-size="14" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">next value</text>
+<text x="299.0" y="252.0" text-anchor="middle" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">on demand</text>
+<path d="M384.0 238.0 L410.0 238.0" fill="none" stroke="#555" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="416.0" y="218.0" width="62.0" height="40.0" rx="3" fill="none" stroke="#141414" stroke-width="1.3"/>
+<text x="447" y="243" text-anchor="middle" font-size="14" font-family="Menlo, Monaco, Consolas, monospace">?</text>
+<path d="M476.0 238.0 L502.0 238.0" fill="none" stroke="#555" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="508.0" y="218.0" width="62.0" height="40.0" rx="3" fill="none" stroke="#141414" stroke-width="1.3"/>
+<text x="539" y="243" text-anchor="middle" font-size="14" font-family="Menlo, Monaco, Consolas, monospace">?</text>
+<path d="M568.0 238.0 L594.0 238.0" fill="none" stroke="#555" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="600.0" y="218.0" width="62.0" height="40.0" rx="3" fill="none" stroke="#141414" stroke-width="1.3"/>
+<text x="631" y="243" text-anchor="middle" font-size="14" font-family="Menlo, Monaco, Consolas, monospace">?</text>
+<path d="M660.0 238.0 L686.0 238.0" fill="none" stroke="#555" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="692.0" y="218.0" width="62.0" height="40.0" rx="3" fill="none" stroke="#141414" stroke-width="1.3"/>
+<text x="723" y="243" text-anchor="middle" font-size="14" font-family="Menlo, Monaco, Consolas, monospace">?</text>
+<text x="470.0" y="292.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">no length, no array; a value is produced when one is asked for</text>
+<path d="M80.0 318.0 L860.0 318.0" fill="none" stroke="#a8a8a8" stroke-width="1"/>
+<text x="470.0" y="346.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">at a duration of one sample the stream is the waveform</text>
+<text x="470.0" y="370.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">which is the data structure GENDYN already used</text>
+</svg>
