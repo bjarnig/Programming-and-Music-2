@@ -197,3 +197,67 @@ x = { DynGen.ar(1, \built, params: [freq: 110]) * 0.2 ! 2 }.play;
 x.free
 
 CmdPeriod.run
+
+
+///////////////////// One line each ////////////////////////////
+
+/* Seven scripts of one line, one for each person named earlier in the
+   class. None is a faithful implementation; each is the smallest thing
+   that carries the idea. Read the line, predict the sound, then play it. */
+
+// Xenakis: stochastic variation of the sound pressure directly, held by barriers
+(
+DynGenDef(\xe, "w += (rand() * 2 - 1) * _step; w = max(-1, min(1, w)); out0 = w;").send;
+)
+
+{ DynGen.ar(1, \xe, params: [step: MouseX.kr(0.002, 0.3)]) * 0.3 ! 2 }.play
+
+// Brün: an element is an amplitude and a duration in samples
+(
+DynGenDef(\br, "c += 1; c >= _len ? (c = 0; v = rand() * 2 - 1); out0 = v;").send;
+)
+
+{ DynGen.ar(1, \br, params: [len: MouseX.kr(4, 800, \exponential)]) * 0.3 ! 2 }.play
+
+// Koenig: the same, with the amplitudes quantised to a small set of values
+(
+DynGenDef(\ko, "c += 1; c >= _len ? (c = 0; v = floor(rand() * 5) / 2 - 1); out0 = v;").send;
+)
+
+{ DynGen.ar(1, \ko, params: [len: 90]) * 0.3 ! 2 }.play
+
+// Berg: the waveform is the consequence of an instruction, not of a curve
+(
+DynGenDef(\be, "p += _step; p > 1 ? p = -1; out0 = p;").send;
+)
+
+{ DynGen.ar(1, \be, params: [step: MouseX.kr(0.0005, 0.2, \exponential)]) * 0.3 ! 2 }.play
+
+// Di Scipio: one equation applied to its own output, once per sample
+(
+DynGenDef(\ds, "y = y <= 0 ? 0.5 : _r * y * (1 - y); out0 = y * 2 - 1;").send;
+)
+
+{ DynGen.ar(1, \ds, params: [r: MouseX.kr(2.8, 4.0)]) * 0.3 ! 2 }.play
+
+// Wishart: a new gain at every zero crossing of the input, which is a waveset
+(
+DynGenDef(\wi, "s = in0 >= 0; s != u ? g = rand(); u = s; out0 = in0 * g;").send;
+)
+
+(
+{ DynGen.ar(1, \wi, SinOsc.ar(180) + (0.5 * SinOsc.ar(437))) * 0.4 ! 2 }.play
+)
+
+// Oram: a shape drawn by hand, read as a waveform
+(
+~drawn = Buffer.sendCollection(s, Signal.newFrom(512.collect { |i|
+	var x = i / 511;
+	(x * 2 - 1).cubed + (0.3 * sin(x * 2pi * 3))
+}), 1);
+DynGenDef(\or, "p += _freq * bufFrames(_buf) / srate; p >= bufFrames(_buf) ? p -= bufFrames(_buf); out0 = bufReadL(_buf, p);").send;
+)
+
+{ DynGen.ar(1, \or, params: [freq: 110, buf: ~drawn.bufnum]) * 0.3 ! 2 }.play
+
+CmdPeriod.run

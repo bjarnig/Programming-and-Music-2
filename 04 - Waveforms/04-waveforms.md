@@ -497,6 +497,46 @@ DynGenDef(\built, ~partials.(32)).send;
 <span class="note">At 32 partials on a 110 Hz fundamental the upper terms pass Nyquist and alias. That is audible, and it is the argument for band-limited oscillators.</span>
 
 ---
+
+# Short Scripts
+
+One line for each person named earlier in the class. None is a faithful implementation. Each is the smallest thing that carries the idea.
+
+```supercollider {*|1-2|4-5|7-8|10-11|*}
+// Xenakis: stochastic variation of the sound pressure, held by barriers
+"w += (rand() * 2 - 1) * _step; w = max(-1, min(1, w)); out0 = w;"
+
+// Brün: an element is an amplitude and a duration in samples
+"c += 1; c >= _len ? (c = 0; v = rand() * 2 - 1); out0 = v;"
+
+// Koenig: the same, with the amplitudes quantised to a small set
+"c += 1; c >= _len ? (c = 0; v = floor(rand() * 5) / 2 - 1); out0 = v;"
+
+// Berg: the waveform follows from an instruction rather than from a curve
+"p += _step; p > 1 ? p = -1; out0 = p;"
+```
+
+<span class="q">Read each line and predict the sound before playing it.</span>
+
+---
+
+# Short Scripts
+
+```supercollider {*|1-2|4-5|7-9|*}
+// Di Scipio: one equation applied to its own output, once per sample
+"y = y <= 0 ? 0.5 : _r * y * (1 - y); out0 = y * 2 - 1;"
+
+// Wishart: a new gain at every zero crossing of the input, which is a waveset
+"s = in0 >= 0; s != u ? g = rand(); u = s; out0 = in0 * g;"
+
+// Oram: a shape drawn by hand, read as a waveform
+"p += _freq * bufFrames(_buf) / srate; p >= bufFrames(_buf) ? p -= bufFrames(_buf);
+ out0 = bufReadL(_buf, p);"
+```
+
+<span class="note">All seven are in *DynGen.scd*, each with a mouse control on the parameter that matters most.</span>
+
+---
 class: light
 ---
 
