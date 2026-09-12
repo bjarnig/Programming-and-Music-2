@@ -353,6 +353,150 @@ Three UGens in the standard distribution, written by Nick Collins after Xenakis'
 <span class="note">The full set, including `Gendy2` through a `Klank`, is in *Gendy.scd*.</span>
 
 ---
+
+# DynGen
+
+An extension that compiles **EEL2** code into the audio graph and runs it **once per sample** on the server.
+
+A script is registered like a SynthDef, under a name, and takes its inputs from `in0`, `in1` and its parameters from names prefixed with an underscore. Output is written to `out0`.
+
+Nothing in this section uses an oscillator UGen. Every waveform below is arithmetic.
+
+<span class="note">Requires SuperCollider 3.14. The plugin is not notarized, so it needs de-quarantining once after installation.</span>
+
+---
+class: light
+---
+
+# DynGen
+
+<div class="shot"><img src="/figures/dyngen-000.svg" /></div>
+
+<!--
+The reason this belongs in this class and not in a general SuperCollider class: single
+sample operations are exactly what Brün, Koenig and Berg were doing, on machines that took
+minutes to produce seconds. This is the same operation at the same rate as the audio.
+-->
+
+---
+
+# A Sine by Hand
+
+A phase accumulator, wrapped, and the sine of it. There is no `SinOsc` anywhere.
+
+```supercollider {*|2-5|8|*}
+(
+DynGenDef(\bySine, "
+phase += 2*$pi * _freq / srate;
+phase >= (2*$pi) ? phase -= 2*$pi;
+out0 = sin(phase);
+").send;
+)
+
+{ DynGen.ar(1, \bySine, params: [freq: 220]) * 0.2 ! 2 }.play
+```
+
+<span class="note">Variables inside the script are created on first use and start at zero, so `phase` needs no declaration.</span>
+
+---
+
+# Instructions
+
+After Berg's PILE and ASP: the waveform is decided by conditions rather than described by a formula. A value walks by a fixed step and turns around at a barrier.
+
+```supercollider {*|2-3|5-7|8|*}
+DynGenDef(\instr, "
+@init
+dir = 1;
+@sample
+val += dir * _step;
+val >= _barrier ? (val = _barrier; dir = -1);
+val <= -_barrier ? (val = -_barrier; dir = 1);
+out0 = val;
+").send;
+```
+
+<span class="note">A triangle, arrived at without naming a triangle. The barrier sets the pitch, because the walk turns sooner.</span>
+
+---
+
+# Dynamic Stochastic Synthesis
+
+Xenakis' algorithm written out. At each breakpoint a new duration and a new amplitude are drawn by a random walk, both held inside barriers.
+
+```supercollider {*|5-7|8-10|11-13|15|*}
+DynGenDef(\gendy, "
+@init
+dur = 100;
+@sample
+count += 1;
+count >= dur ? (
+  count = 0; from = to;
+  amp += (rand() * 2 - 1) * _ampStep;
+  amp > _ampBarrier ? amp = _ampBarrier;
+  amp < -_ampBarrier ? amp = -_ampBarrier;
+  to = amp;
+  dur += (rand() * 2 - 1) * _durStep;
+  dur = max(_durMin, min(_durMax, dur));
+);
+out0 = from + ((to - from) * (count / dur));
+").send;
+```
+
+<span class="q">What happens to the sound as the barriers widen?</span>
+
+---
+
+# Iterated Functions
+
+Di Scipio's functional iterated synthesis: one equation applied to its own output, once per sample. The logistic map at 44100 iterations a second.
+
+```supercollider {*|2-6|9|12|15|*}
+DynGenDef(\iterated, "
+@init
+y = 0.5;
+
+@sample
+y = _r * y * (1 - y);
+out0 = (y * 2) - 1;
+").send;
+
+// below 3.0 it settles, and the output is silence after the first click
+{ DynGen.ar(1, \iterated, params: [r: 2.8]) * 0.2 ! 2 }.play
+
+// past 3.57 it never repeats, and the result is broadband noise
+{ DynGen.ar(1, \iterated, params: [r: 3.9]) * 0.2 ! 2 }.play
+
+// swept through the bifurcations
+{ DynGen.ar(1, \iterated, params: [r: Line.kr(2.8, 4.0, 20)]) * 0.2 ! 2 }.play
+```
+
+---
+
+# Generated Code
+
+A definition is a string, so it can be assembled by another program. This is the SAWDUST idea with the machine of 1976 replaced.
+
+```supercollider {*|2-6|7-9|13-15|*}
+~partials = { |n|
+	var terms = Array.fill(n, { |i|
+		"(" ++ (1 / (i + 1)) ++ " * sin(" ++ (i + 1) ++ " * phase))"
+	});
+	"phase += 2*$pi * _freq / srate;\n"
+	++ "phase >= (2*$pi) ? phase -= 2*$pi;\n"
+	++ "out0 = " ++ terms.join(" + ") ++ ";";
+};
+
+~partials.(3).postln;
+// out0 = (1.0 * sin(1 * phase)) + (0.5 * sin(2 * phase)) + (0.333 * sin(3 * phase));
+
+DynGenDef(\built, ~partials.(32)).send;
+{ DynGen.ar(1, \built, params: [freq: 110]) * 0.2 ! 2 }.play
+```
+
+<span class="note">At 32 partials on a 110 Hz fundamental the upper terms pass Nyquist and alias. That is audible, and it is the argument for band-limited oscillators.</span>
+
+---
 class: light
 ---
 
