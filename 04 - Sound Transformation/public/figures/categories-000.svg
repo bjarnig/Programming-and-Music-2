@@ -1,0 +1,38 @@
+<!-- drawn by Course-Development/figures/pm2-sound-transformation-figs.py
+     edit there and re-run; do not hand-edit this file -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 406" width="1000" height="406" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
+<text x="500.0" y="26.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">four categories of transformation instrument, by what each one takes hold of</text>
+<rect x="56.0" y="74.0" width="214.0" height="200.0" rx="4" fill="none" stroke="#141414" stroke-width="2.0"/>
+<text x="163.0" y="106.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">the waveform</text>
+<path d="M80.0 122.0 L246.0 122.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="163.0" y="146.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">loudness contour</text>
+<text x="163.0" y="170.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">filter banks</text>
+<text x="163.0" y="194.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">waveset distortion</text>
+<text x="163.0" y="296.0" text-anchor="middle" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">the samples themselves</text>
+<rect x="292.0" y="74.0" width="214.0" height="200.0" rx="4" fill="none" stroke="#141414" stroke-width="2.0"/>
+<text x="399.0" y="106.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">segments</text>
+<path d="M316.0 122.0 L482.0 122.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="399.0" y="146.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">time-stretch</text>
+<text x="399.0" y="170.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">pitch-shift</text>
+<text x="399.0" y="194.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">sound-shred</text>
+<text x="399.0" y="218.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">brassage, reverberation</text>
+<text x="399.0" y="296.0" text-anchor="middle" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">the sound cut up and reassembled</text>
+<rect x="528.0" y="74.0" width="214.0" height="200.0" rx="4" fill="none" stroke="#141414" stroke-width="2.0"/>
+<text x="635.0" y="106.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">the spectrum</text>
+<path d="M552.0 122.0 L718.0 122.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="635.0" y="146.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">spectral tracing</text>
+<text x="635.0" y="170.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">formant manipulation</text>
+<text x="635.0" y="194.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">morphing</text>
+<text x="635.0" y="296.0" text-anchor="middle" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">the time-varying analysis</text>
+<rect x="764.0" y="74.0" width="214.0" height="200.0" rx="4" fill="none" stroke="#141414" stroke-width="2.0"/>
+<text x="871.0" y="106.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">whole events</text>
+<path d="M788.0 122.0 L954.0 122.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="871.0" y="146.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">iteration</text>
+<text x="871.0" y="170.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">texture generation</text>
+<text x="871.0" y="194.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">mixing</text>
+<text x="871.0" y="296.0" text-anchor="middle" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">the sound as one object</text>
+<path d="M56.0 340.0 L944.0 340.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="500.0" y="366.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">the same recording will take all four, and they do not sound alike</text>
+<text x="500.0" y="388.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">Trevor Wishart's own division, as the class deck has always had it</text>
+</svg>

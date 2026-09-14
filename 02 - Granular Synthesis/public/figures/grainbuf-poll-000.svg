@@ -1,0 +1,58 @@
+<!-- drawn by Course-Development/figures/pm2-grainbuf-figs.py
+     edit there and re-run; do not hand-edit this file -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 352" width="940" height="352" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker><marker id="s" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5"><circle cx="5" cy="5" r="4" fill="#141414"/></marker></defs>
+<text x="470.0" y="24.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">pos moves continuously; each grain reads it once</text>
+<text x="104.0" y="70.0" text-anchor="end" font-size="14" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace">trigger</text>
+<path d="M120.0 66.0 L830.0 66.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M120.0 66.0 L120.0 44.0" fill="none" stroke="#141414" stroke-width="2"/>
+<path d="M208.8 66.0 L208.8 44.0" fill="none" stroke="#141414" stroke-width="2"/>
+<path d="M297.5 66.0 L297.5 44.0" fill="none" stroke="#141414" stroke-width="2"/>
+<path d="M386.2 66.0 L386.2 44.0" fill="none" stroke="#141414" stroke-width="2"/>
+<path d="M475.0 66.0 L475.0 44.0" fill="none" stroke="#141414" stroke-width="2"/>
+<path d="M563.8 66.0 L563.8 44.0" fill="none" stroke="#141414" stroke-width="2"/>
+<path d="M652.5 66.0 L652.5 44.0" fill="none" stroke="#141414" stroke-width="2"/>
+<path d="M741.2 66.0 L741.2 44.0" fill="none" stroke="#141414" stroke-width="2"/>
+<text x="104.0" y="147.0" text-anchor="end" font-size="14" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace">pos</text>
+<path d="M120.0 186.0 L830.0 186.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M120.0 186.0 L830.0 114.0" fill="none" stroke="#555" stroke-width="1.5" stroke-dasharray="4 4"/>
+<circle cx="120.0" cy="186.0" r="3.4" fill="#141414"/>
+<path d="M120.0 186.0 L120.0 186.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="2 3"/>
+<circle cx="208.8" cy="177.0" r="3.4" fill="#141414"/>
+<path d="M208.8 177.0 L208.8 186.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="2 3"/>
+<circle cx="297.5" cy="168.0" r="3.4" fill="#141414"/>
+<path d="M297.5 168.0 L297.5 186.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="2 3"/>
+<circle cx="386.2" cy="159.0" r="3.4" fill="#141414"/>
+<path d="M386.2 159.0 L386.2 186.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="2 3"/>
+<circle cx="475.0" cy="150.0" r="3.4" fill="#141414"/>
+<path d="M475.0 150.0 L475.0 186.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="2 3"/>
+<circle cx="563.8" cy="141.0" r="3.4" fill="#141414"/>
+<path d="M563.8 141.0 L563.8 186.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="2 3"/>
+<circle cx="652.5" cy="132.0" r="3.4" fill="#141414"/>
+<path d="M652.5 132.0 L652.5 186.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="2 3"/>
+<circle cx="741.2" cy="123.0" r="3.4" fill="#141414"/>
+<path d="M741.2 123.0 L741.2 186.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="2 3"/>
+<path d="M120.0 186.0 H208.8 M208.8 177.0 H297.5 M297.5 168.0 H386.2 M386.2 159.0 H475.0 M475.0 150.0 H563.8 M563.8 141.0 H652.5 M652.5 132.0 H741.2 M741.2 123.0 H830.0" fill="none" stroke="#141414" stroke-width="2.4"/>
+<text x="844.0" y="118.0" text-anchor="start" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">the value</text>
+<text x="844.0" y="134.0" text-anchor="start" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">each grain kept</text>
+<text x="104.0" y="238.0" text-anchor="end" font-size="14" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace">grains</text>
+<rect x="120.0" y="224.0" width="55.0" height="26.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="147.5" y="242.0" text-anchor="middle" font-size="12" font-family="Menlo, Monaco, Consolas, monospace" fill="#141414">0.000</text>
+<rect x="208.8" y="224.0" width="55.0" height="26.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="236.3" y="242.0" text-anchor="middle" font-size="12" font-family="Menlo, Monaco, Consolas, monospace" fill="#141414">0.025</text>
+<rect x="297.5" y="224.0" width="55.0" height="26.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="325.0" y="242.0" text-anchor="middle" font-size="12" font-family="Menlo, Monaco, Consolas, monospace" fill="#141414">0.050</text>
+<rect x="386.2" y="224.0" width="55.0" height="26.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="413.8" y="242.0" text-anchor="middle" font-size="12" font-family="Menlo, Monaco, Consolas, monospace" fill="#141414">0.075</text>
+<rect x="475.0" y="224.0" width="55.0" height="26.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="502.5" y="242.0" text-anchor="middle" font-size="12" font-family="Menlo, Monaco, Consolas, monospace" fill="#141414">0.100</text>
+<rect x="563.8" y="224.0" width="55.0" height="26.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="591.3" y="242.0" text-anchor="middle" font-size="12" font-family="Menlo, Monaco, Consolas, monospace" fill="#141414">0.125</text>
+<rect x="652.5" y="224.0" width="55.0" height="26.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="680.0" y="242.0" text-anchor="middle" font-size="12" font-family="Menlo, Monaco, Consolas, monospace" fill="#141414">0.150</text>
+<rect x="741.2" y="224.0" width="55.0" height="26.0" rx="3" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="768.8" y="242.0" text-anchor="middle" font-size="12" font-family="Menlo, Monaco, Consolas, monospace" fill="#141414">0.175</text>
+<text x="470.0" y="282.0" text-anchor="middle" font-size="14" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">measured: pos advances by 0.025 per grain</text>
+<path d="M120.0 302.0 L820.0 302.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="470.0" y="330.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">a grain cannot be changed once created; the next one is created differently</text>
+</svg>

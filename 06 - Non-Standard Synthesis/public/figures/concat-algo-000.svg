@@ -1,0 +1,70 @@
+<!-- drawn by Course-Development/figures/pm2-non-standard-synthesis-figs.py
+     edit there and re-run; do not hand-edit this file -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 966 458" width="966" height="458" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
+<text x="490.0" y="26.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">a waveform built one GENDY iteration at a time</text>
+<text x="70.0" y="56.0" text-anchor="start" font-size="14" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">a set of GENDYs</text>
+<rect x="70.0" y="76.0" width="150.0" height="90.0" rx="4" fill="none" stroke="#141414" stroke-width="1.8"/>
+<text x="145.0" y="192.0" text-anchor="middle" font-size="13" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">GENDY 0</text>
+<path d="M84.0 134.3 L124.7 95.9 L165.3 144.8 L206.0 100.7" fill="none" stroke="#141414" stroke-width="1.8"/>
+<path d="M84.0 121.0 L206.0 121.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<circle cx="84.0" cy="134.3" r="2.4" fill="#141414"/>
+<circle cx="124.7" cy="95.9" r="2.4" fill="#141414"/>
+<circle cx="165.3" cy="144.8" r="2.4" fill="#141414"/>
+<circle cx="206.0" cy="100.7" r="2.4" fill="#141414"/>
+<rect x="246.0" y="76.0" width="150.0" height="90.0" rx="4" fill="none" stroke="#141414" stroke-width="1.8"/>
+<text x="321.0" y="192.0" text-anchor="middle" font-size="13" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">GENDY 1</text>
+<path d="M260.0 143.4 L280.3 97.2 L300.7 148.9 L321.0 105.2 L341.3 145.2 L361.7 91.4 L382.0 151.0" fill="none" stroke="#141414" stroke-width="1.8"/>
+<path d="M260.0 121.0 L382.0 121.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<circle cx="260.0" cy="143.4" r="2.4" fill="#141414"/>
+<circle cx="280.3" cy="97.2" r="2.4" fill="#141414"/>
+<circle cx="300.7" cy="148.9" r="2.4" fill="#141414"/>
+<circle cx="321.0" cy="105.2" r="2.4" fill="#141414"/>
+<circle cx="341.3" cy="145.2" r="2.4" fill="#141414"/>
+<circle cx="361.7" cy="91.4" r="2.4" fill="#141414"/>
+<circle cx="382.0" cy="151.0" r="2.4" fill="#141414"/>
+<rect x="422.0" y="76.0" width="150.0" height="90.0" rx="4" fill="none" stroke="#141414" stroke-width="1.8"/>
+<text x="497.0" y="192.0" text-anchor="middle" font-size="13" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">GENDY 2</text>
+<path d="M436.0 138.5 L497.0 101.8 L558.0 140.8" fill="none" stroke="#141414" stroke-width="1.8"/>
+<path d="M436.0 121.0 L558.0 121.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<circle cx="436.0" cy="138.5" r="2.4" fill="#141414"/>
+<circle cx="497.0" cy="101.8" r="2.4" fill="#141414"/>
+<circle cx="558.0" cy="140.8" r="2.4" fill="#141414"/>
+<path d="M602.0 121.0 L638.0 121.0" fill="none" stroke="#141414" stroke-width="1.4" marker-end="url(#a)"/>
+<rect x="638.0" y="76.0" width="268.0" height="90.0" rx="4" fill="none" stroke="#141414" stroke-width="2.4"/>
+<text x="772.0" y="106.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">stochastic selection</text>
+<text x="772.0" y="132.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">random, series, weighted,</text>
+<text x="772.0" y="152.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">tendency mask, Markov chain</text>
+<path d="M772 174 L772 214 L480 214 L480 246" fill="none" stroke="#141414" stroke-width="1.7" marker-end="url(#a)"/>
+<text x="70.0" y="258.0" text-anchor="start" font-size="14" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">output</text>
+<path d="M96.0 335.8 L112.7 286.8 L129.3 341.6 L146.0 295.2 L162.7 337.7 L179.3 280.6 L196.0 343.8" fill="none" stroke="#141414" stroke-width="1.9"/>
+<path d="M96.0 264.0 L96.0 360.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="146.0" y="384.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">1</text>
+<path d="M196.0 326.1 L218.0 285.4 L240.0 337.3 L262.0 290.4" fill="none" stroke="#141414" stroke-width="1.9"/>
+<path d="M196.0 264.0 L196.0 360.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="229.0" y="384.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">0</text>
+<path d="M262.0 330.6 L285.0 291.6 L308.0 333.0" fill="none" stroke="#141414" stroke-width="1.9"/>
+<path d="M262.0 264.0 L262.0 360.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="285.0" y="384.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">2</text>
+<path d="M308.0 326.1 L330.0 285.4 L352.0 337.3 L374.0 290.4" fill="none" stroke="#141414" stroke-width="1.9"/>
+<path d="M308.0 264.0 L308.0 360.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="341.0" y="384.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">0</text>
+<path d="M374.0 335.8 L390.7 286.8 L407.3 341.6 L424.0 295.2 L440.7 337.7 L457.3 280.6 L474.0 343.8" fill="none" stroke="#141414" stroke-width="1.9"/>
+<path d="M374.0 264.0 L374.0 360.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="424.0" y="384.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">1</text>
+<path d="M474.0 335.8 L490.7 286.8 L507.3 341.6 L524.0 295.2 L540.7 337.7 L557.3 280.6 L574.0 343.8" fill="none" stroke="#141414" stroke-width="1.9"/>
+<path d="M474.0 264.0 L474.0 360.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="524.0" y="384.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">1</text>
+<path d="M574.0 330.6 L597.0 291.6 L620.0 333.0" fill="none" stroke="#141414" stroke-width="1.9"/>
+<path d="M574.0 264.0 L574.0 360.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="597.0" y="384.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">2</text>
+<path d="M620.0 326.1 L642.0 285.4 L664.0 337.3 L686.0 290.4" fill="none" stroke="#141414" stroke-width="1.9"/>
+<path d="M620.0 264.0 L620.0 360.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="653.0" y="384.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">0</text>
+<path d="M686.0 264.0 L686.0 360.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M96.0 312.0 L686.0 312.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="712.0" y="308.0" text-anchor="start" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">one iteration each,</text>
+<text x="712.0" y="328.0" text-anchor="start" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">end to end</text>
+<path d="M70.0 414.0 L906.0 414.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="488.0" y="440.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">close to the way SSP permutes segments, with a whole GENDY in place of each segment</text>
+</svg>

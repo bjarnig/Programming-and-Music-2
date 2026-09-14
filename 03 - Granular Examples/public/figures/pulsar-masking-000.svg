@@ -1,0 +1,130 @@
+<!-- drawn by Course-Development/figures/pm2-granular-examples-figs.py
+     edit there and re-run; do not hand-edit this file -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 434" width="940" height="434" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
+<text x="470.0" y="26.0" text-anchor="middle" font-size="16" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">a mask is applied to the train after it is generated</text>
+<text x="186.0" y="97.0" text-anchor="end" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">the train</text>
+<text x="186.0" y="116.0" text-anchor="end" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">fund sets the spacing</text>
+<path d="M200.0 92.0 L820.0 92.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M200.0 92.0 L200.0 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M224.8 92.0 L224.8 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M249.6 92.0 L249.6 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M274.4 92.0 L274.4 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M299.2 92.0 L299.2 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M324.0 92.0 L324.0 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M348.8 92.0 L348.8 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M373.6 92.0 L373.6 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M398.4 92.0 L398.4 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M423.2 92.0 L423.2 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M448.0 92.0 L448.0 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M472.8 92.0 L472.8 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M497.6 92.0 L497.6 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M522.4 92.0 L522.4 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M547.2 92.0 L547.2 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M572.0 92.0 L572.0 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M596.8 92.0 L596.8 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M621.6 92.0 L621.6 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M646.4 92.0 L646.4 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M671.2 92.0 L671.2 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M696.0 92.0 L696.0 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M720.8 92.0 L720.8 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M745.6 92.0 L745.6 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M770.4 92.0 L770.4 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M795.2 92.0 L795.2 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M820.0 92.0 L820.0 70.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<text x="186.0" y="171.0" text-anchor="end" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">probability</text>
+<text x="186.0" y="190.0" text-anchor="end" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">prob = 0.6</text>
+<path d="M200.0 166.0 L820.0 166.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M200.0 166.0 L200.0 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M224.8 166.0 L224.8 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M249.6 166.0 L249.6 144.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M274.4 166.0 L274.4 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M299.2 166.0 L299.2 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M324.0 166.0 L324.0 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M348.8 166.0 L348.8 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M373.6 166.0 L373.6 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M398.4 166.0 L398.4 144.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M423.2 166.0 L423.2 144.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M448.0 166.0 L448.0 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M472.8 166.0 L472.8 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M497.6 166.0 L497.6 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M522.4 166.0 L522.4 144.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M547.2 166.0 L547.2 144.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M572.0 166.0 L572.0 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M596.8 166.0 L596.8 144.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M621.6 166.0 L621.6 144.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M646.4 166.0 L646.4 144.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M671.2 166.0 L671.2 144.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M696.0 166.0 L696.0 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M720.8 166.0 L720.8 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M745.6 166.0 L745.6 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M770.4 166.0 L770.4 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M795.2 166.0 L795.2 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M820.0 166.0 L820.0 144.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<text x="186.0" y="245.0" text-anchor="end" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">burst and rest</text>
+<text x="186.0" y="264.0" text-anchor="end" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">burst 5, rest 3</text>
+<path d="M200.0 240.0 L820.0 240.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M200.0 240.0 L200.0 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M224.8 240.0 L224.8 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M249.6 240.0 L249.6 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M274.4 240.0 L274.4 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M299.2 240.0 L299.2 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M324.0 240.0 L324.0 218.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M348.8 240.0 L348.8 218.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M373.6 240.0 L373.6 218.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M398.4 240.0 L398.4 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M423.2 240.0 L423.2 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M448.0 240.0 L448.0 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M472.8 240.0 L472.8 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M497.6 240.0 L497.6 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M522.4 240.0 L522.4 218.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M547.2 240.0 L547.2 218.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M572.0 240.0 L572.0 218.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M596.8 240.0 L596.8 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M621.6 240.0 L621.6 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M646.4 240.0 L646.4 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M671.2 240.0 L671.2 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M696.0 240.0 L696.0 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M720.8 240.0 L720.8 218.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M745.6 240.0 L745.6 218.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M770.4 240.0 L770.4 218.0" fill="none" stroke="#9a9a9a" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M795.2 240.0 L795.2 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M820.0 240.0 L820.0 218.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<text x="186.0" y="319.0" text-anchor="end" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">channel</text>
+<text x="186.0" y="338.0" text-anchor="end" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">chanMask 2, centerMask 1</text>
+<path d="M200.0 298.0 L820.0 298.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M200.0 314.0 L820.0 314.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M200.0 330.0 L820.0 330.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M200.0 298.0 L200.0 285.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M224.8 298.0 L224.8 285.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M249.6 330.0 L249.6 317.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M274.4 330.0 L274.4 317.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M299.2 314.0 L299.2 301.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M324.0 298.0 L324.0 285.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M348.8 298.0 L348.8 285.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M373.6 330.0 L373.6 317.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M398.4 330.0 L398.4 317.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M423.2 314.0 L423.2 301.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M448.0 298.0 L448.0 285.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M472.8 298.0 L472.8 285.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M497.6 330.0 L497.6 317.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M522.4 330.0 L522.4 317.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M547.2 314.0 L547.2 301.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M572.0 298.0 L572.0 285.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M596.8 298.0 L596.8 285.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M621.6 330.0 L621.6 317.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M646.4 330.0 L646.4 317.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M671.2 314.0 L671.2 301.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M696.0 298.0 L696.0 285.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M720.8 298.0 L720.8 285.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M745.6 330.0 L745.6 317.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M770.4 330.0 L770.4 317.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M795.2 314.0 L795.2 301.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<path d="M820.0 298.0 L820.0 285.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<text x="834.0" y="302.0" text-anchor="start" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">L</text>
+<text x="834.0" y="318.0" text-anchor="start" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">C</text>
+<text x="834.0" y="334.0" text-anchor="start" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">R</text>
+<path d="M130.0 366.0 L810.0 366.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="470.0" y="392.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">the pulsaret and the two frequencies do not change; only which pulses sound</text>
+<text x="470.0" y="414.0" text-anchor="middle" font-size="14" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">Roads takes the term from Xenakis: the rhythm of pulsar synthesis comes from the mask</text>
+</svg>

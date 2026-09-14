@@ -1,0 +1,124 @@
+<!-- drawn by Course-Development/figures/pm2-granular-synthesis-figs.py
+     edit there and re-run; do not hand-edit this file -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" width="1000" height="450" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
+<text x="500.0" y="26.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">a snapshot of the sound, then the next one</text>
+<rect x="96.0" y="66.0" width="220.0" height="176.0" rx="2" fill="none" stroke="#141414" stroke-width="1.8"/>
+<path d="M123.5 66.0 L123.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M151.0 66.0 L151.0 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M178.5 66.0 L178.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M206.0 66.0 L206.0 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M233.5 66.0 L233.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M261.0 66.0 L261.0 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M288.5 66.0 L288.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M96.0 85.6 L316.0 85.6" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M96.0 105.1 L316.0 105.1" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M96.0 124.7 L316.0 124.7" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M96.0 144.2 L316.0 144.2" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M96.0 163.8 L316.0 163.8" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M96.0 183.3 L316.0 183.3" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M96.0 202.9 L316.0 202.9" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M96.0 222.4 L316.0 222.4" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="247.2" cy="154.0" r="3.4" fill="#141414"/>
+<circle cx="109.8" cy="134.4" r="3.4" fill="#141414"/>
+<circle cx="274.8" cy="154.0" r="3.4" fill="#141414"/>
+<circle cx="219.8" cy="232.2" r="3.4" fill="#141414"/>
+<circle cx="274.8" cy="193.1" r="3.4" fill="#141414"/>
+<circle cx="219.8" cy="95.3" r="3.4" fill="#141414"/>
+<circle cx="164.8" cy="232.2" r="3.4" fill="#141414"/>
+<text x="206.0" y="264.0" text-anchor="middle" font-size="13" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">screen 1</text>
+<path d="M332.0 154.0 L376.0 154.0" fill="none" stroke="#141414" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="354.0" y="144.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">dt</text>
+<rect x="388.0" y="66.0" width="220.0" height="176.0" rx="2" fill="none" stroke="#141414" stroke-width="1.8"/>
+<path d="M415.5 66.0 L415.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M443.0 66.0 L443.0 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M470.5 66.0 L470.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M498.0 66.0 L498.0 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M525.5 66.0 L525.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M553.0 66.0 L553.0 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M580.5 66.0 L580.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M388.0 85.6 L608.0 85.6" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M388.0 105.1 L608.0 105.1" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M388.0 124.7 L608.0 124.7" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M388.0 144.2 L608.0 144.2" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M388.0 163.8 L608.0 163.8" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M388.0 183.3 L608.0 183.3" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M388.0 202.9 L608.0 202.9" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M388.0 222.4 L608.0 222.4" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="401.8" cy="212.7" r="3.4" fill="#141414"/>
+<circle cx="566.8" cy="173.6" r="3.4" fill="#141414"/>
+<circle cx="429.2" cy="95.3" r="3.4" fill="#141414"/>
+<circle cx="511.8" cy="193.1" r="3.4" fill="#141414"/>
+<circle cx="429.2" cy="232.2" r="3.4" fill="#141414"/>
+<circle cx="566.8" cy="232.2" r="3.4" fill="#141414"/>
+<circle cx="401.8" cy="114.9" r="3.4" fill="#141414"/>
+<circle cx="484.2" cy="134.4" r="3.4" fill="#141414"/>
+<circle cx="539.2" cy="75.8" r="3.4" fill="#141414"/>
+<circle cx="539.2" cy="193.1" r="3.4" fill="#141414"/>
+<circle cx="594.2" cy="114.9" r="3.4" fill="#141414"/>
+<circle cx="401.8" cy="173.6" r="3.4" fill="#141414"/>
+<circle cx="484.2" cy="114.9" r="3.4" fill="#141414"/>
+<circle cx="566.8" cy="134.4" r="3.4" fill="#141414"/>
+<circle cx="484.2" cy="173.6" r="3.4" fill="#141414"/>
+<circle cx="456.8" cy="232.2" r="3.4" fill="#141414"/>
+<text x="498.0" y="264.0" text-anchor="middle" font-size="13" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">screen 2</text>
+<path d="M624.0 154.0 L668.0 154.0" fill="none" stroke="#141414" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="646.0" y="144.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">dt</text>
+<rect x="680.0" y="66.0" width="220.0" height="176.0" rx="2" fill="none" stroke="#141414" stroke-width="1.8"/>
+<path d="M707.5 66.0 L707.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M735.0 66.0 L735.0 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M762.5 66.0 L762.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M790.0 66.0 L790.0 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M817.5 66.0 L817.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M845.0 66.0 L845.0 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M872.5 66.0 L872.5 242.0" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M680.0 85.6 L900.0 85.6" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M680.0 105.1 L900.0 105.1" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M680.0 124.7 L900.0 124.7" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M680.0 144.2 L900.0 144.2" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M680.0 163.8 L900.0 163.8" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M680.0 183.3 L900.0 183.3" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M680.0 202.9 L900.0 202.9" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<path d="M680.0 222.4 L900.0 222.4" fill="none" stroke="#9a9a9a" stroke-width="0.7"/>
+<circle cx="803.8" cy="75.8" r="3.4" fill="#141414"/>
+<circle cx="776.2" cy="154.0" r="3.4" fill="#141414"/>
+<circle cx="803.8" cy="134.4" r="3.4" fill="#141414"/>
+<circle cx="776.2" cy="212.7" r="3.4" fill="#141414"/>
+<circle cx="803.8" cy="193.1" r="3.4" fill="#141414"/>
+<circle cx="831.2" cy="95.3" r="3.4" fill="#141414"/>
+<circle cx="693.8" cy="232.2" r="3.4" fill="#141414"/>
+<circle cx="721.2" cy="134.4" r="3.4" fill="#141414"/>
+<circle cx="886.2" cy="154.0" r="3.4" fill="#141414"/>
+<circle cx="886.2" cy="95.3" r="3.4" fill="#141414"/>
+<circle cx="858.8" cy="173.6" r="3.4" fill="#141414"/>
+<circle cx="858.8" cy="232.2" r="3.4" fill="#141414"/>
+<circle cx="803.8" cy="114.9" r="3.4" fill="#141414"/>
+<circle cx="803.8" cy="173.6" r="3.4" fill="#141414"/>
+<circle cx="776.2" cy="134.4" r="3.4" fill="#141414"/>
+<circle cx="831.2" cy="75.8" r="3.4" fill="#141414"/>
+<circle cx="831.2" cy="134.4" r="3.4" fill="#141414"/>
+<circle cx="748.8" cy="154.0" r="3.4" fill="#141414"/>
+<circle cx="886.2" cy="75.8" r="3.4" fill="#141414"/>
+<circle cx="721.2" cy="232.2" r="3.4" fill="#141414"/>
+<circle cx="886.2" cy="134.4" r="3.4" fill="#141414"/>
+<circle cx="886.2" cy="193.1" r="3.4" fill="#141414"/>
+<circle cx="803.8" cy="95.3" r="3.4" fill="#141414"/>
+<circle cx="776.2" cy="173.6" r="3.4" fill="#141414"/>
+<circle cx="831.2" cy="114.9" r="3.4" fill="#141414"/>
+<circle cx="693.8" cy="75.8" r="3.4" fill="#141414"/>
+<circle cx="721.2" cy="154.0" r="3.4" fill="#141414"/>
+<circle cx="748.8" cy="134.4" r="3.4" fill="#141414"/>
+<circle cx="748.8" cy="193.1" r="3.4" fill="#141414"/>
+<circle cx="858.8" cy="75.8" r="3.4" fill="#141414"/>
+<text x="790.0" y="264.0" text-anchor="middle" font-size="13" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">screen 3</text>
+<text transform="rotate(-90 84 154.0)" x="84.0" y="154.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">frequency</text>
+<text x="206.0" y="56.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">amplitude</text>
+<path d="M96.0 300.0 L96.0 314.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M900.0 300.0 L900.0 314.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M96.0 307.0 L900.0 307.0" fill="none" stroke="#141414" stroke-width="1.3" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="500.0" y="332.0" text-anchor="middle" font-size="14" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">a book of screens, which is one complex sound</text>
+<text x="500.0" y="356.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">each cell is a Gabor quantum; how many grains fall on a screen, and where, is drawn from a distribution</text>
+<path d="M96.0 384.0 L904.0 384.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="500.0" y="410.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">the density of the screen is composed, and the grains inside it are placed according to a distribution</text>
+<text x="500.0" y="432.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">Xenakis, Formalized Music, chapter 3; the method of Analogique B, 1959</text>
+</svg>

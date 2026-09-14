@@ -1,0 +1,42 @@
+<!-- drawn by Course-Development/figures/pm2-sound-transformation-figs.py
+     edit there and re-run; do not hand-edit this file -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 518" width="1000" height="518" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
+<text x="500.0" y="26.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">a change in quantity heard as a change in kind</text>
+<path d="M250.0 130.0 L890.0 130.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<path d="M890.0 130.0 L882.0 126.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<path d="M890.0 130.0 L882.0 134.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="236.0" y="134.0" text-anchor="end" font-size="13" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">repetition rate</text>
+<text x="260.0" y="150.0" text-anchor="start" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">separate events</text>
+<text x="880.0" y="150.0" text-anchor="end" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">one continuous tone</text>
+<path d="M518.8 122.0 L518.8 156.0" fill="none" stroke="#141414" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="518.8" y="114.0" text-anchor="middle" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">a rhythm</text>
+<path d="M250.0 196.0 L890.0 196.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<path d="M890.0 196.0 L882.0 192.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<path d="M890.0 196.0 L882.0 200.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="236.0" y="200.0" text-anchor="end" font-size="13" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">transposition</text>
+<text x="260.0" y="216.0" text-anchor="start" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">a melody</text>
+<text x="880.0" y="216.0" text-anchor="end" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">a timbre</text>
+<path d="M602.0 188.0 L602.0 222.0" fill="none" stroke="#141414" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="602.0" y="180.0" text-anchor="middle" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">a gesture</text>
+<path d="M250.0 262.0 L890.0 262.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<path d="M890.0 262.0 L882.0 258.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<path d="M890.0 262.0 L882.0 266.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="236.0" y="266.0" text-anchor="end" font-size="13" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">modulation depth</text>
+<text x="260.0" y="282.0" text-anchor="start" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">a pitch</text>
+<text x="880.0" y="282.0" text-anchor="end" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">a complex spectrum</text>
+<path d="M557.2 254.0 L557.2 288.0" fill="none" stroke="#141414" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="557.2" y="246.0" text-anchor="middle" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">vibrato</text>
+<path d="M250.0 328.0 L890.0 328.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<path d="M890.0 328.0 L882.0 324.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<path d="M890.0 328.0 L882.0 332.0" fill="none" stroke="#141414" stroke-width="1.5"/>
+<text x="236.0" y="332.0" text-anchor="end" font-size="13" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">crossfade</text>
+<text x="260.0" y="348.0" text-anchor="start" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">the first sound</text>
+<text x="880.0" y="348.0" text-anchor="end" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">the second</text>
+<path d="M570.0 320.0 L570.0 354.0" fill="none" stroke="#141414" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="570.0" y="312.0" text-anchor="middle" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">both at once</text>
+<text x="500.0" y="420.0" text-anchor="middle" font-size="14" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">the dashed line is the threshold: one parameter moving smoothly, and a listener who hears a different thing on each side</text>
+<path d="M70.0 452.0 L930.0 452.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="500.0" y="478.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">a transformation is composed by choosing which threshold to cross, and how slowly</text>
+<text x="500.0" y="500.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">zones of morphosis, after Curtis Roads, Composing Electronic Music</text>
+</svg>

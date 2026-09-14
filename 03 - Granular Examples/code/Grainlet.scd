@@ -4,7 +4,7 @@
 //
 ////////////////////////////////////////////////////////////////
 
-/* The fourth species, and the one that is not really a sound. Roads:
+/* The fourth variant, and the one that is not really a sound. Roads:
    "The fundamental notion of grainlet synthesis is that any parameter of
    synthesis can be made dependent on (or linked to) any other parameter."
    So there is no grainlet UGen. There is a grain, and a set of rules

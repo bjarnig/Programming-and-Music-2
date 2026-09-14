@@ -1,0 +1,33 @@
+<!-- drawn by Course-Development/figures/pm2-non-standard-synthesis-figs.py
+     edit there and re-run; do not hand-edit this file -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 438" width="1020" height="438" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
+<text x="500.0" y="26.0" text-anchor="middle" font-size="15" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">one waveform, redrawn at every repetition</text>
+<path d="M150.0 121.7 L270.0 204.2 L366.0 134.9 L504.0 187.7 L618.0 117.1 L750.0 121.7" fill="none" stroke="#9a9a9a" stroke-width="1.1"/>
+<path d="M150.0 118.2 L265.2 212.8 L360.9 134.4 L511.3 182.6 L621.1 105.5 L750.0 118.2" fill="none" stroke="#9a9a9a" stroke-width="1.1"/>
+<path d="M150.0 136.4 L253.2 193.7 L344.6 116.0 L484.0 176.5 L609.4 101.6 L750.0 136.4" fill="none" stroke="#9a9a9a" stroke-width="1.1"/>
+<path d="M150.0 146.6 L250.0 212.3 L330.6 117.5 L486.7 178.8 L607.1 114.5 L750.0 146.6" fill="none" stroke="#141414" stroke-width="2.2"/>
+<circle cx="150.0" cy="146.6" r="3.4" fill="#141414"/>
+<circle cx="250.0" cy="212.3" r="3.4" fill="#141414"/>
+<circle cx="330.6" cy="117.5" r="3.4" fill="#141414"/>
+<circle cx="486.7" cy="178.8" r="3.4" fill="#141414"/>
+<circle cx="607.1" cy="114.5" r="3.4" fill="#141414"/>
+<circle cx="750.0" cy="146.6" r="3.4" fill="#141414"/>
+<path d="M140.0 101.2 L762.0 101.2" fill="none" stroke="#555" stroke-width="1.2" stroke-dasharray="6 5"/>
+<text x="772.0" y="105.2" text-anchor="start" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">upper barrier</text>
+<path d="M140.0 214.8 L762.0 214.8" fill="none" stroke="#555" stroke-width="1.2" stroke-dasharray="6 5"/>
+<text x="772.0" y="218.8" text-anchor="start" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">lower barrier</text>
+<path d="M140.0 158.0 L762.0 158.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<path d="M118.0 188.3 L118.0 236.3" fill="none" stroke="#141414" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
+<path d="M244.0 212.3 L124.0 212.3" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="108.0" y="217.3" text-anchor="end" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">amplitude</text>
+<path d="M250.0 222.3 L250.0 268.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M330.6 127.5 L330.6 268.0" fill="none" stroke="#9a9a9a" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M250.0 268.0 L330.6 268.0" fill="none" stroke="#141414" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="290.3" y="290.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">duration</text>
+<text x="30.0" y="322.0" text-anchor="start" font-size="14" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">the breakpoints are joined by linear interpolation; the last one joins</text>
+<text x="30.0" y="342.0" text-anchor="start" font-size="14" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">the first breakpoint of the next repetition</text>
+<path d="M30.0 372.0 L990.0 372.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="514.0" y="398.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">each breakpoint carries a duration walk and an amplitude walk, each held between two elastic barriers</text>
+<text x="514.0" y="420.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">Xenakis, Formalized Music, chapters 9 and 13</text>
+</svg>

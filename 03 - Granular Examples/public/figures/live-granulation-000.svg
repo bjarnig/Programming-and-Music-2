@@ -1,0 +1,44 @@
+<!-- drawn by Course-Development/figures/pm2-granular-examples-figs.py
+     edit there and re-run; do not hand-edit this file -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 466" width="940" height="466" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
+<text x="470.0" y="26.0" text-anchor="middle" font-size="16" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">granulating a sound while it is still arriving</text>
+<rect x="70.0" y="62.0" width="210.0" height="56.0" rx="4" fill="none" stroke="#141414" stroke-width="1.7"/>
+<text x="175.0" y="86.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace" font-weight="600">source</text>
+<text x="175.0" y="106.0" text-anchor="middle" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">PlayBuf / Gendy3</text>
+<rect x="330.0" y="62.0" width="210.0" height="56.0" rx="4" fill="none" stroke="#141414" stroke-width="1.7"/>
+<text x="435.0" y="86.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace" font-weight="600">writer</text>
+<text x="435.0" y="106.0" text-anchor="middle" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">BufWr + Phasor</text>
+<rect x="620.0" y="62.0" width="210.0" height="56.0" rx="4" fill="none" stroke="#141414" stroke-width="1.7"/>
+<text x="725.0" y="86.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace" font-weight="600">reader</text>
+<text x="725.0" y="106.0" text-anchor="middle" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">GrainBuf</text>
+<path d="M280.0 90.0 L326.0 90.0" fill="none" stroke="#141414" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="303.0" y="56.0" text-anchor="middle" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">audio</text>
+<path d="M540.0 90.0 L616.0 90.0" fill="none" stroke="#141414" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="578.0" y="56.0" text-anchor="middle" font-size="12" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">write position</text>
+<text x="578.0" y="136.0" text-anchor="middle" font-size="11.5" fill="#9a9a9a" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">as an audio signal</text>
+<rect x="150.0" y="216.0" width="640.0" height="52.0" rx="4" fill="none" stroke="#141414" stroke-width="1.7"/>
+<text x="138.0" y="248.0" text-anchor="end" font-size="14" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace">buffer</text>
+<text x="138.0" y="266.0" text-anchor="end" font-size="11.5" fill="#9a9a9a" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">a few seconds</text>
+<path d="M611.0 196.0 L629.0 196.0 L620.0 213.0 z" fill="#141414"/>
+<path d="M620.0 216.0 L620.0 268.0" fill="none" stroke="#141414" stroke-width="2.2"/>
+<text x="620.0" y="188.0" text-anchor="middle" font-size="13" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">write head</text>
+<path d="M340.0 242.0 L340.8 241.7 L341.6 240.5 L342.4 239.7 L343.2 242.0 L344.0 247.7 L344.8 252.5 L345.6 251.0 L346.4 242.0 L347.2 231.0 L348.0 226.0 L348.8 231.0 L349.6 242.0 L350.4 251.0 L351.2 252.5 L352.0 247.7 L352.8 242.0 L353.6 239.7 L354.4 240.5 L355.2 241.7 L356.0 242.0" fill="none" stroke="#555" stroke-width="1.5"/>
+<path d="M368.0 242.0 L368.8 241.7 L369.6 240.5 L370.4 239.7 L371.2 242.0 L372.0 247.7 L372.8 252.5 L373.6 251.0 L374.4 242.0 L375.2 231.0 L376.0 226.0 L376.8 231.0 L377.6 242.0 L378.4 251.0 L379.2 252.5 L380.0 247.7 L380.8 242.0 L381.6 239.7 L382.4 240.5 L383.2 241.7 L384.0 242.0" fill="none" stroke="#555" stroke-width="1.5"/>
+<path d="M396.0 242.0 L396.8 241.7 L397.6 240.5 L398.4 239.7 L399.2 242.0 L400.0 247.7 L400.8 252.5 L401.6 251.0 L402.4 242.0 L403.2 231.0 L404.0 226.0 L404.8 231.0 L405.6 242.0 L406.4 251.0 L407.2 252.5 L408.0 247.7 L408.8 242.0 L409.6 239.7 L410.4 240.5 L411.2 241.7 L412.0 242.0" fill="none" stroke="#555" stroke-width="1.5"/>
+<path d="M424.0 242.0 L424.8 241.7 L425.6 240.5 L426.4 239.7 L427.2 242.0 L428.0 247.7 L428.8 252.5 L429.6 251.0 L430.4 242.0 L431.2 231.0 L432.0 226.0 L432.8 231.0 L433.6 242.0 L434.4 251.0 L435.2 252.5 L436.0 247.7 L436.8 242.0 L437.6 239.7 L438.4 240.5 L439.2 241.7 L440.0 242.0" fill="none" stroke="#555" stroke-width="1.5"/>
+<path d="M452.0 242.0 L452.8 241.7 L453.6 240.5 L454.4 239.7 L455.2 242.0 L456.0 247.7 L456.8 252.5 L457.6 251.0 L458.4 242.0 L459.2 231.0 L460.0 226.0 L460.8 231.0 L461.6 242.0 L462.4 251.0 L463.2 252.5 L464.0 247.7 L464.8 242.0 L465.6 239.7 L466.4 240.5 L467.2 241.7 L468.0 242.0" fill="none" stroke="#555" stroke-width="1.5"/>
+<path d="M480.0 242.0 L480.8 241.7 L481.6 240.5 L482.4 239.7 L483.2 242.0 L484.0 247.7 L484.8 252.5 L485.6 251.0 L486.4 242.0 L487.2 231.0 L488.0 226.0 L488.8 231.0 L489.6 242.0 L490.4 251.0 L491.2 252.5 L492.0 247.7 L492.8 242.0 L493.6 239.7 L494.4 240.5 L495.2 241.7 L496.0 242.0" fill="none" stroke="#555" stroke-width="1.5"/>
+<path d="M508.0 242.0 L508.8 241.7 L509.6 240.5 L510.4 239.7 L511.2 242.0 L512.0 247.7 L512.8 252.5 L513.6 251.0 L514.4 242.0 L515.2 231.0 L516.0 226.0 L516.8 231.0 L517.6 242.0 L518.4 251.0 L519.2 252.5 L520.0 247.7 L520.8 242.0 L521.6 239.7 L522.4 240.5 L523.2 241.7 L524.0 242.0" fill="none" stroke="#555" stroke-width="1.5"/>
+<path d="M536.0 242.0 L536.8 241.7 L537.6 240.5 L538.4 239.7 L539.2 242.0 L540.0 247.7 L540.8 252.5 L541.6 251.0 L542.4 242.0 L543.2 231.0 L544.0 226.0 L544.8 231.0 L545.6 242.0 L546.4 251.0 L547.2 252.5 L548.0 247.7 L548.8 242.0 L549.6 239.7 L550.4 240.5 L551.2 241.7 L552.0 242.0" fill="none" stroke="#555" stroke-width="1.5"/>
+<path d="M564.0 242.0 L564.8 241.7 L565.6 240.5 L566.4 239.7 L567.2 242.0 L568.0 247.7 L568.8 252.5 L569.6 251.0 L570.4 242.0 L571.2 231.0 L572.0 226.0 L572.8 231.0 L573.6 242.0 L574.4 251.0 L575.2 252.5 L576.0 247.7 L576.8 242.0 L577.6 239.7 L578.4 240.5 L579.2 241.7 L580.0 242.0" fill="none" stroke="#555" stroke-width="1.5"/>
+<path d="M340.0 284.0 L620.0 284.0" fill="none" stroke="#141414" stroke-width="1.6"/>
+<path d="M340.0 278.0 L340.0 290.0" fill="none" stroke="#141414" stroke-width="1.6"/>
+<path d="M620.0 278.0 L620.0 290.0" fill="none" stroke="#141414" stroke-width="1.6"/>
+<text x="480.0" y="308.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">delay</text>
+<text x="480.0" y="328.0" text-anchor="middle" font-size="12.5" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">grains are taken from behind the write head</text>
+<path d="M790.0 242.0 C 832.0 304.0, 108.0 304.0, 150.0 246.0" fill="none" stroke="#555" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#a)"/>
+<path d="M130.0 400.0 L810.0 400.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="470.0" y="426.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">the reader has to run after the writer, or it reads the previous block</text>
+<text x="470.0" y="448.0" text-anchor="middle" font-size="14" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">which is why the three are started in reverse</text>
+</svg>

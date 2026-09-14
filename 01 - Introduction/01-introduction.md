@@ -24,12 +24,6 @@ mdc: true
   <a href="https://www.bjarni-gunnarsson.net">https://www.bjarni-gunnarsson.net</a>
 </div>
 
-<!--
-First class, 8 September 2026. Who is here: second-year bachelors with one year of
-SuperCollider, and master students joining for the advanced content. Say once that the
-class is the same for both and the assignments have two tracks.
--->
-
 ---
 layout: center
 class: divider
@@ -99,11 +93,6 @@ During the year there will be **three assignments**, one per theme, each worth 3
 
 Every assignment has two parts: work you **hand in**, code together with a short text on the approach and its value in a musical setting, and an **in-class assignment** where you write code from scratch in the room.
 
-<!--
-The in-class part is the one that shows what has actually stuck. Say that it is not a test:
-it is the same work, done without a week to prepare and without anything to copy from.
--->
-
 ---
 layout: center
 class: divider
@@ -118,21 +107,15 @@ Topics
 <p style="text-align:center"><strong>- (01) Material -</strong></p>
 
 01, Introduction<br>
-02, Granularity<br>
+02, Granular Synthesis<br>
 03, Granular Examples<br>
-04, Waveforms<br>
-05, Waveforms Examples<br>
-06, CDP<br>
-07, CDP Examples<br>
+04, Sound Transformation<br>
+05, Sound Transformation Examples<br>
+06, Non-Standard Synthesis<br>
+07, Non-Standard Examples<br>
 08, Design Patterns
 
 <p style="text-align:right"><em>Assignment 1 (30 %)</em></p>
-
-<!--
-Sound built from nothing first, from a recording second. Trevor Wishart is at Sonology on
-14, 15 and 16 October: CDP on the 13th is the day before he arrives, CDP Examples on the
-20th is the week after him.
--->
 
 ---
 
@@ -294,17 +277,10 @@ Material
 
 **Composing the sound** instead of composing with sounds. The first eight classes focus on what lies beneath the note: the **grain**, the **sample**, and the **transformation** of sound.
 
-- **Granularity**: sound as particles
+- **Granular synthesis**: sound as particles
 - **Non-standard synthesis**: waveforms described by rule (Xenakis, Brün, Koenig)
 - **Sound transformation**: CDP, one source and many outputs, choosing afterwards
 - **Design patterns**: the architecture of sound processes
-
-<!--
-The working habit of the whole year is set here: generate a family, keep everything,
-sort afterwards. Assignment 1 asks for exactly that.
-Trevor Wishart is at Sonology in October and the CDP classes sit around that visit; say it
-aloud rather than promising a date on a slide.
--->
 
 ---
 
@@ -379,11 +355,6 @@ class: light
 <div class="src">(Trevor Wishart, 2009)</div>
 <div class="fig"><img src="/figures/cdp-000.png" /></div>
 
-<!--
-Wishart's own tool, Sound Loom, the front end of CDP. Both quotes from the Unidentified
-Sound Object interview. He is here in October.
--->
-
 ---
 layout: center
 class: divider
@@ -431,10 +402,6 @@ class: light
 <div class="src">(Collins, McLean, Rohrhuber, Ward, Live Coding in Laptop Performance, 2003)</div>
 <div class="fig"><img src="/figures/collins-000.png" /></div>
 
-<!--
-The table is from the same paper: pros and cons of live coding performance, 2003.
--->
-
 ---
 class: light
 ---
@@ -459,11 +426,6 @@ class: light
 <div class="src">(Agostino Di Scipio)</div>
 <div class="fig"><img src="/figures/interface-000.svg" /></div>
 
-<!--
-Feedback and space in one breath: a feedback system on stage listens to the room it is in.
-Classes 12 and 15.
--->
-
 ---
 class: light
 ---
@@ -476,11 +438,6 @@ class: light
 
 <div class="src">(George Lewis, Too Many Notes, 2000; interview, 2022)</div>
 <div class="fig"><img src="/figures/player-000.svg" /></div>
-
-<!--
-Class 13, Live Algorithms. The question for the block: instrument or player? Rowe's other
-axes: score-driven or performance-driven; transformative, generative or sequenced response.
--->
 
 ---
 
@@ -524,10 +481,6 @@ class: light
 <div class="src">(Alberto de Campo, 2025; Alan Turing, 1950)</div>
 <div class="fig"><img src="/figures/bifurcation-000.png" /></div>
 
-<!--
-The frame for the whole block: a deterministic system that surprises its own author.
--->
-
 ---
 class: light
 ---
@@ -550,11 +503,6 @@ class: light
 <div class="src">(Mark Bedau, Weak Emergence, 1997)</div>
 <div class="fig"><img src="/figures/life-000.png" /></div>
 
-<!--
-When a composer says a patch surprised them, this is the claim being made: the result
-follows from the rules, but only by running them. Class 24.
--->
-
 ---
 class: light
 ---
@@ -576,11 +524,6 @@ class: light
 
 <div class="src">(Matteo Pasquinelli and Vladan Joler, The Nooscope Manifested)</div>
 <div class="fig"><img src="/figures/network-000.png" /></div>
-
-<!--
-Classes 17 to 19: machine listening and learning as instruments you build and tune,
-not as an intelligence you consult.
--->
 
 ---
 class: light
@@ -675,13 +618,6 @@ Writing the waveform itself, sample by sample.
 )
 ```
 
-<!--
-Run from 01 - Introduction/code/Themes.scd. No oscillator and no model of an instrument:
-the numbers are the waveform, and a demand stream supplies them one sample at a time. This
-is the class 04 lineage, Xenakis and Brün and Koenig, in two blocks. Play the saw first so
-the composite is heard as the same machine with a longer list.
--->
-
 ---
 
 # Liveness
@@ -705,11 +641,6 @@ Ndef(\c)[2] = \filter -> {|in| LPF.ar(in, LFNoise1.ar(8).range(100,800)) };
 )
 ```
 
-<!--
-Nothing stops. The slot index is the whole idea of block 2: a running system with
-addressable parts.
--->
-
 ---
 
 # Systems
@@ -731,11 +662,6 @@ b = ~voice;
 
 <span class="note">All three blocks are in *Themes.scd*, in this class's code folder.</span>
 
-<!--
-A listening machine in nine lines. Block 3 asks what it misses, and what to do with what
-it hears.
--->
-
 ---
 layout: center
 class: divider
@@ -752,11 +678,6 @@ Three, one per example. Start from the code in *Themes.scd*.
 1. **Material.** Change the list of segments in the composite waveform: add one, remove one, or reorder them. Listen for what changes and what does not.
 2. **Liveness.** Build a source with an `Ndef`, play it, then add a filter to it and change that filter, all without stopping the sound.
 3. **Systems.** Take the pitch and amplitude the analysis reports, and use them to drive a synth of your own instead of the saw.
-
-<!--
-Small on purpose. The point is that all three run in the first week, not that they are
-finished pieces. Whatever they bring back sets the level for assignment 1.
--->
 
 ---
 layout: center

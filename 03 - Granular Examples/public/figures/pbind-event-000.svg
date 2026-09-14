@@ -1,0 +1,50 @@
+<!-- drawn by Course-Development/figures/pm2-granular-examples-figs.py
+     edit there and re-run; do not hand-edit this file -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 412" width="940" height="412" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#141414"/></marker></defs>
+<text x="470.0" y="26.0" text-anchor="middle" font-size="16" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">a Pbind is one stream per key; an event is a column through them</text>
+<text x="112.0" y="89.0" text-anchor="end" font-size="15" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace">\freq</text>
+<path d="M150.0 84.0 L580.0 84.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<circle cx="150.0" cy="84.0" r="4.5" fill="#141414"/>
+<circle cx="230.0" cy="84.0" r="4.5" fill="#141414"/>
+<circle cx="310.0" cy="84.0" r="4.5" fill="#141414"/>
+<circle cx="390.0" cy="84.0" r="4.5" fill="#141414"/>
+<circle cx="470.0" cy="84.0" r="4.5" fill="#141414"/>
+<circle cx="550.0" cy="84.0" r="4.5" fill="#141414"/>
+<text x="596.0" y="89.0" text-anchor="start" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">Pexprand(200, 4000)</text>
+<text x="112.0" y="141.0" text-anchor="end" font-size="15" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace">\dur</text>
+<path d="M150.0 136.0 L580.0 136.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<circle cx="150.0" cy="136.0" r="4.5" fill="#141414"/>
+<circle cx="230.0" cy="136.0" r="4.5" fill="#141414"/>
+<circle cx="310.0" cy="136.0" r="4.5" fill="#141414"/>
+<circle cx="390.0" cy="136.0" r="4.5" fill="#141414"/>
+<circle cx="470.0" cy="136.0" r="4.5" fill="#141414"/>
+<circle cx="550.0" cy="136.0" r="4.5" fill="#141414"/>
+<text x="596.0" y="141.0" text-anchor="start" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">Pkey(\freq).explin(200, 4000, 0.12, 0.008)</text>
+<text x="112.0" y="193.0" text-anchor="end" font-size="15" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace">\pan</text>
+<path d="M150.0 188.0 L580.0 188.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<circle cx="150.0" cy="188.0" r="4.5" fill="#141414"/>
+<circle cx="230.0" cy="188.0" r="4.5" fill="#141414"/>
+<circle cx="310.0" cy="188.0" r="4.5" fill="#141414"/>
+<circle cx="390.0" cy="188.0" r="4.5" fill="#141414"/>
+<circle cx="470.0" cy="188.0" r="4.5" fill="#141414"/>
+<circle cx="550.0" cy="188.0" r="4.5" fill="#141414"/>
+<text x="596.0" y="193.0" text-anchor="start" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">Pwhite(-1.0, 1.0)</text>
+<text x="112.0" y="245.0" text-anchor="end" font-size="15" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace">\delta</text>
+<path d="M150.0 240.0 L580.0 240.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<circle cx="150.0" cy="240.0" r="4.5" fill="#141414"/>
+<circle cx="230.0" cy="240.0" r="4.5" fill="#141414"/>
+<circle cx="310.0" cy="240.0" r="4.5" fill="#141414"/>
+<circle cx="390.0" cy="240.0" r="4.5" fill="#141414"/>
+<circle cx="470.0" cy="240.0" r="4.5" fill="#141414"/>
+<circle cx="550.0" cy="240.0" r="4.5" fill="#141414"/>
+<text x="596.0" y="245.0" text-anchor="start" font-size="12.5" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">0.04</text>
+<rect x="293.0" y="62.0" width="34.0" height="200.0" rx="6" fill="none" stroke="#141414" stroke-width="1.7" stroke-dasharray="4 3"/>
+<text x="310.0" y="50.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">one event</text>
+<path d="M310.0 270.0 L310.0 306.0" fill="none" stroke="#141414" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="310.0" y="332.0" text-anchor="middle" font-size="14" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace">Synth(\grainlet, ...)</text>
+<path d="M124.0 96.0 C 84.0 104.0, 84.0 122.0, 124.0 128.0" fill="none" stroke="#141414" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="60.0" y="114.0" text-anchor="end" font-size="13" fill="#141414" font-family="Menlo, Monaco, Consolas, monospace">Pkey</text>
+<path d="M130.0 366.0 L810.0 366.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+<text x="470.0" y="392.0" text-anchor="middle" font-size="15" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">the linkage that was a local variable inside a Routine becomes a key that reads another key</text>
+</svg>

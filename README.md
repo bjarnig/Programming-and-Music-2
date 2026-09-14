@@ -23,7 +23,7 @@ composition for creating innovative musical works.
   - `Demand.scd` - Demand-rate UGens and control
 - PMB01 - Introduction.pdf
 
-### 02 - Granularity
+### 02 - Granular Synthesis
 - Granular synthesis fundamentals and techniques
 - **Code files:**
   - `GrainRoutines.scd` - Granular synthesis with routines
@@ -44,8 +44,24 @@ composition for creating innovative musical works.
   - `Pulsars.scd` - Pulsar synthesis
 - PMB03 - Granular Examples.pdf
 
-### 04 - Waveforms
-- Waveform generation and manipulation
+### 04 - Sound Transformation
+- Composer's Desktop Project: sound transformation and processing
+- **Code files:**
+  - `CDP.scd` - CDP integration with SuperCollider
+- PMB09 - CDP.pdf
+- Archive files: `pmb15.png`, `pmb15.zip`
+
+### 05 - Sound Transformation Examples
+- Advanced CDP techniques and cross-synthesis
+- **Code files:**
+  - `CDP2.scd` - Advanced CDP processing
+  - `CDPCross.scd` - Cross-synthesis with CDP
+  - `CDPGui.scd` - Graphical interface for CDP workflows
+- PMB16 - CDP 2.pdf
+- Archive files: `pmb16.png`, `pmb16.zip`
+
+### 06 - Non-Standard Synthesis
+- Describing the waveform directly, sample by sample
 - **Code files:**
   - `Shapes.scd` - Waveform shape generation
   - `Binary.scd` - Binary operations on waveforms
@@ -55,37 +71,14 @@ composition for creating innovative musical works.
   - `Wavesets.scd` - Waveset analysis and synthesis
 - PMB04 - Waveforms.pdf
 
-### 05 - Waveforms Examples
-- Advanced waveform synthesis applications
+### 07 - Non-Standard Examples
+- The same idea with SuperCollider's own tools
 - **Code files:**
   - `WavesetsEx.scd` - Waveset synthesis examples
   - `BinaryEx.scd` - Binary operation examples
   - `DemandEx.scd` - Demand-rate synthesis examples
   - `Youtube-Microsound.scd` - YouTube tutorial examples
 - PMB05 - NSS Examples.pdf
-
-### 06 - Sonification
-- Data sonification techniques and file I/O
-- **Code files:**
-  - `Files.scd` - File reading and data manipulation
-  - `Sonification.scd` - Data-to-sound mapping techniques
-- **Data files:**
-  - `earthquakes.csv`, `failedbanks.csv`, `populationbycountry.csv`
-  - `temperature.csv`, `votes.csv`, `courses.txt`
-  - `deathprobabilities.csv`, and more
-- PMB06 - Sonification.pdf
-
-### 07 - Chaos
-- Chaos theory and algorithmic composition
-- **Code files:**
-  - `ChaosUGens.scd` - Chaotic oscillators and generators
-  - `ChaosFunctions.scd` - Chaos functions in language
-  - `ChaosPatterns.scd` - Pattern-based chaos
-  - `voss.scd` - Voss noise (1/f noise) generation
-- **Assignment 1:**
-  - City data sonification project
-  - `cities.csv` - Dataset for assignment
-- PMB07 - Chaos.pdf
 
 ### 08 - Examples
 - Comprehensive examples integrating course concepts
@@ -182,22 +175,6 @@ composition for creating innovative musical works.
 - **Assignment 2:** PMB - Assignment 2 (2026).pdf
 - Archive files: `pmb14.png`, `pmb14.zip`
 
-### 15 - CDP
-- Composer's Desktop Project: sound transformation and processing
-- **Code files:**
-  - `CDP.scd` - CDP integration with SuperCollider
-- PMB09 - CDP.pdf
-- Archive files: `pmb15.png`, `pmb15.zip`
-
-### 16 - CDP2
-- Advanced CDP techniques and cross-synthesis
-- **Code files:**
-  - `CDP2.scd` - Advanced CDP processing
-  - `CDPCross.scd` - Cross-synthesis with CDP
-  - `CDPGui.scd` - Graphical interface for CDP workflows
-- PMB16 - CDP 2.pdf
-- Archive files: `pmb16.png`, `pmb16.zip`
-
 ### 17 - Analysis
 - Spectral analysis, FFT, and ecosystemic composition
 - **Code files:**
@@ -259,7 +236,7 @@ composition for creating innovative musical works.
 
 The course includes three major assignments:
 
-- **Assignment 1** (Section 07 - Chaos): City data sonification project using chaotic systems
+- **Assignment 1** (Section 22 - Chaos): City data sonification project using chaotic systems
 - **Assignment 2** (Sections 12/14 - Network Music / Live Examples): Network music and live coding performance project (2026)
 - **Assignment 3** (Sections 18/20 - FluCoMa / Complexity): Machine learning and complex systems project (2026)
 
@@ -270,4 +247,26 @@ The course includes three major assignments:
 
 ## License
 
-This course material is provided under the terms specified in the LICENSE file.
+This course material is provided under the terms specified in the LICENSE file.### 21 - Sonification
+- Data sonification techniques and file I/O
+- **Code files:**
+  - `Files.scd` - File reading and data manipulation
+  - `Sonification.scd` - Data-to-sound mapping techniques
+- **Data files:**
+  - `earthquakes.csv`, `failedbanks.csv`, `populationbycountry.csv`
+  - `temperature.csv`, `votes.csv`, `courses.txt`
+  - `deathprobabilities.csv`, and more
+- PMB06 - Sonification.pdf
+
+### 22 - Chaos
+- Chaos theory and algorithmic composition
+- **Code files:**
+  - `ChaosUGens.scd` - Chaotic oscillators and generators
+  - `ChaosFunctions.scd` - Chaos functions in language
+  - `ChaosPatterns.scd` - Pattern-based chaos
+  - `voss.scd` - Voss noise (1/f noise) generation
+- **Assignment 1:**
+  - City data sonification project
+  - `cities.csv` - Dataset for assignment
+- PMB07 - Chaos.pdf
+
