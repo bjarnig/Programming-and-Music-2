@@ -151,6 +151,13 @@ class: light
 <div class="shot"><img src="/figures/thresholds-algo-000.svg" /></div>
 
 ---
+layout: center
+class: divider
+---
+
+<Listen file="roads-volt-air-1.m4a">Curtis Roads, Volt Air, Pt. 1 (2003)</Listen>
+
+---
 
 # Horacio Vaggione
 
@@ -357,8 +364,6 @@ class: light
 
 # A Single Grain
 
-A single grain, emitted slowly enough to be heard on its own.
-
 ```supercollider
 // one grain, roughly once a second, from a third of the way into the buffer
 { GrainBuf.ar(2, Impulse.kr(0.8), 0.08, ~voice.bufnum, 1, 0.3) * 0.6 }.play
@@ -520,22 +525,6 @@ Each grain is its own event, so any key can carry a pattern instead of a number.
 ```
 
 <span class="note">All of it in *GrainPatterns.scd*, with the last example varying six of them at once.</span>
-
----
-
-# Loudness
-
-Grains overlap by `dur / delta`. At `dur 0.1` and `delta 0.01`, ten sound at once.
-
-They do not sum in phase, so the result grows with the **square root** of the overlap rather than with the overlap itself. One expression then holds every example at the same level, whatever `dur` and `delta` are doing:
-
-```supercollider
-~amp = Pfunc { |e| 0.9 * sqrt(e[\delta] / e[\dur]) };
-```
-
-<span class="q">Where does the square root come from?</span>
-
-<span class="note">Measured across the eleven examples in the file: peaks between 0.16 and 0.38, none clipping.</span>
 
 ---
 
