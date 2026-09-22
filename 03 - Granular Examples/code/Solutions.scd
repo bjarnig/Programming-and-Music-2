@@ -225,7 +225,7 @@ Routine {
 
 
 ///////////////////////////// 7 ////////////////////////////////
-// two knobs only: everything else is derived from them
+// two knobs only
 
 (
 ~coupled = { |density = 0.5, brightness = 0.5|
@@ -297,6 +297,7 @@ Pbind(
 // the read head drifts behind the write head instead of trailing it by a fixed gap
 
 (
+
 Routine {
 	~rec = Buffer.alloc(s, s.sampleRate * 2, 1); s.sync;
 	~posbus = Bus.audio(s, 1);
@@ -305,14 +306,14 @@ Routine {
 	~rd  = Synth.after(~wr, \readerMoving, [\buf, ~rec.bufnum, \in, ~posbus.index,
 		\dur, 0.35, \delay, 0.12, \sweep, 0.09, \sweepRate, 0.06, \amp, 0.5]);
 }.play;
+
 )
 
-// A fixed delay is a canon at a fixed distance. A moving one bends pitch as it
-// moves, and the grains slide between the past and the present of the same sound.
-
 (
+
 [~rd, ~wr, ~src].do(_.free);
 ~posbus.free; ~rec.free;
+
 )
 
 
@@ -372,7 +373,7 @@ s.freeAll;
 
 
 //////////////////////////// 13 ////////////////////////////////
-// the set of resonators and the rhythm that strikes them, composed apart
+// the set of resonators and the rhythm that strikes them
 
 (
 ~set = [

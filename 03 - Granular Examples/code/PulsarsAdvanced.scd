@@ -7,25 +7,6 @@
 /* Pulsars.scd builds the train: a pulsaret of duration d, a silence of
    duration s, and a period p = d + s. Formant is 1/d and fundamental is 1/p,
    and the two are independent.
-
-   That is a texture generator. Three additions turn it into something a piece
-   can be made of.
-
-   Masking decides which pulses sound at all. Roads takes the term from
-   Xenakis: a mask is a rule applied to the train after it has been generated,
-   and it is what gives pulsar synthesis its rhythm. Three kinds are here:
-   probability, burst and rest, and channel.
-
-   Flux is bounded randomness. A pulsar train with fixed parameters is
-   recognisably synthetic within a second. A slow bounded walk on top of a
-   trajectory is not, and the walk has to be bounded or it leaves the range.
-
-   Resonance treats the train as an excitation rather than as the sound. A
-   pulsar has a wide spectrum and a sharp attack, which is what a resonator
-   wants. The resonator carries the pitch and the train carries the rhythm.
-
-   Amplitude: every layered example divides by the number of layers, because
-   these do sum.
 */
 
 
@@ -67,16 +48,16 @@ SynthDef(\pulsarM, { |wavebuf, envbuf, fund = 40, form = 400, amp = 0.3,
 
 	var flux, trig, grain, rate, mask, sig;
 
-	// flux: a slow bounded walk around 1, multiplying both frequencies
+	// flux
 	flux = LFDNoise3.ar(fluxRate, fluxAmt, 1).lag(0.2);
 	grain = form * flux;
 	trig = Impulse.ar(fund * LFDNoise3.kr(fluxRate, fluxAmt * 0.5, 1).lag(0.2));
 
-	// masking, in the order Roads gives: first drop pulses, then group them
+	// masking
 	trig = CoinGate.ar(prob, trig);
 	trig = trig * Demand.ar(trig, 0, Dseq([Dser([1], burst), Dser([0], rest)], inf));
 
-	// channel mask: n pulses left, n right, then centerMask in the middle
+	// channel mask with the centerMask in the middle
 	mask = Demand.ar(trig, 0, Dseq([
 		Dser([-1], chanMask), Dser([1], chanMask), Dser([0], centerMask)], inf)).lag(0.005);
 
@@ -95,7 +76,7 @@ SynthDef(\pulsarM, { |wavebuf, envbuf, fund = 40, form = 400, amp = 0.3,
 
 //////////////// The pulsaret ////////////////
 
-( // the same train three times; only the waveform in the buffer changes
+( // the same sequence three times, only the waveform in the buffer changes
 Pbind(\instrument, \pulsarM, \envbuf, ~envbuf, \fund, 40, \form, 500,
 	\amp, 0.3, \dur, 2,
 	\wavebuf, Pseq([~pSine, ~pRand, ~pOdd].collect(_.bufnum), 1)).play;
@@ -104,25 +85,25 @@ Pbind(\instrument, \pulsarM, \envbuf, ~envbuf, \fund, 40, \form, 500,
 
 //////////////// Masking ////////////////
 
-( // probability: each pulse survives with probability prob
+( // probability
 Pmono(\pulsarM, \wavebuf, ~pRand.bufnum, \envbuf, ~envbuf,
 	\fund, 60, \form, 600, \amp, 0.3,
 	\prob, Pseq([1.0, 0.8, 0.5, 0.25, 0.1], inf), \dur, 1.5).play;
 )
 
-( // burst and rest: the train is grouped into a rhythm
+( // burst and rest
 Pmono(\pulsarM, \wavebuf, ~pRand.bufnum, \envbuf, ~envbuf,
 	\fund, 80, \form, 700, \amp, 0.3,
 	\burst, Pseq([5, 3, 7, 2], inf), \rest, Pseq([3, 1, 2, 6], inf), \dur, 1).play;
 )
 
-( // channel mask: consecutive pulses land in different places
+( // channel mask
 Pmono(\pulsarM, \wavebuf, ~pOdd.bufnum, \envbuf, ~envbuf,
 	\fund, 50, \form, 400, \amp, 0.3,
 	\chanMask, Pseq([1, 2, 4], inf), \centerMask, Pseq([1, 0, 2], inf), \dur, 2).play;
 )
 
-( // all three at once, which is where the rhythm stops being regular
+( // all three at once
 Pmono(\pulsarM, \wavebuf, ~pOdd.bufnum, \envbuf, ~envbuf,
 	\fund, 90, \form, Pbrown(300, 1400, 120), \amp, 0.3,
 	\prob, 0.75, \burst, Prand([3, 5, 8], inf), \rest, Prand([1, 2, 4], inf),
@@ -132,15 +113,13 @@ Pmono(\pulsarM, \wavebuf, ~pOdd.bufnum, \envbuf, ~envbuf,
 
 //////////////// Flux ////////////////
 
-( // the same train with and without flux; listen for how quickly it settles
+(
 Pmono(\pulsarM, \wavebuf, ~pRand.bufnum, \envbuf, ~envbuf,
 	\fund, 45, \form, 550, \amp, 0.3,
 	\fluxAmt, Pseq([0, 0.05, 0.15, 0.35], inf), \fluxRate, 8, \dur, 3).play;
 )
 
-( /* Flux written on the pattern side instead: a trajectory times a bounded
-     random walk. The walk is a value that remembers, so it is a Pfunc over a
-     variable, and the two are combined with Pkey. */
+( /* Flux on the pattern side instead */
 
 var formDrift = 1.0, fundDrift = 1.0;
 
@@ -156,8 +135,7 @@ Pmono(\pulsarM, \wavebuf, ~pOdd.bufnum, \envbuf, ~envbuf, \amp, 0.3, \dur, 0.1,
 
 //////////////// Formant FM ////////////////
 
-( /* Modulating the read rate modulates the formant, so the sidebands appear
-     around the formant peak and the fundamental is untouched. */
+( /* Modulating the read rate modulates the formant. */
 
 Pmono(\pulsarM, \wavebuf, ~pSine.bufnum, \envbuf, ~envbuf,
 	\fund, 35, \form, 500, \amp, 0.3, \dur, 2,
@@ -187,12 +165,6 @@ SynthDef(\pulsarComb, { |wavebuf, envbuf, fund = 8, form = 300, amp = 0.2,
 		combMix * 2 - 1);
 	Out.ar(0, LeakDC.ar(sig));
 }).add;
-
-/* A bank rather than one filter. A narrow BPF is the wrong tool here: at an RQ
-   of 0.08 the passband at 110 Hz is about 9 Hz wide, so it throws away almost
-   all of a pulsaret's energy and the result is 40 dB below the others. A
-   resonator rings instead of passing, so it keeps what it is given. */
-
 SynthDef(\pulsarKlank, { |wavebuf, envbuf, fund = 30, form = 2000, amp = 0.3,
 	decay = 1, mix = 0.85, pan = 0|
 	var trig = Impulse.ar(fund);
@@ -218,7 +190,7 @@ SynthDef(\pulsarKlank, { |wavebuf, envbuf, fund = 30, form = 2000, amp = 0.3,
 };
 )
 
-( // comb delays tuned to the same set: the resonance is a pitch and an echo at once
+( // comb delays tuned to the same set
 ~freqs.do { |f, i|
 	Pmono(\pulsarComb, \wavebuf, ~pRand.bufnum, \envbuf, ~envbuf,
 		\form, Pseg(Pseq([f, f * 6, f * 0.5], inf), Pseq([7, 5, 9], inf), \exp),
@@ -229,8 +201,7 @@ SynthDef(\pulsarKlank, { |wavebuf, envbuf, fund = 30, form = 2000, amp = 0.3,
 };
 )
 
-( /* The whole set in one bank, struck by one train. The pulsaret is short, so
-     each pulse is close to a click and excites all six at once. */
+( // The whole set in one bank, struck by one train
 
 Pmono(\pulsarKlank, \wavebuf, ~pOdd.bufnum, \envbuf, ~envbuf,
 	\freqs, ~freqs, \decays, ~freqs.collect { 1.0 },
@@ -240,18 +211,16 @@ Pmono(\pulsarKlank, \wavebuf, ~pOdd.bufnum, \envbuf, ~envbuf,
 	\dur, 0.1).play;
 )
 
-( // the same bank with the decays uneven, so the set is heard as a chord voiced
+(
 Pmono(\pulsarKlank, \wavebuf, ~pRand.bufnum, \envbuf, ~envbuf,
 	\freqs, ~freqs, \decays, [3.0, 0.4, 1.6, 0.3, 2.2, 0.5],
-	\form, 2500, \mix, 0.9, \amp, 0.2, \fund, 30, \dur, 0.2).play;
+	\form, 2500, \mix, 0.9, \amp, 0.1, \fund, 30, \dur, 0.2).play;
 )
 
 
-//////////////// Walking the set ////////////////
+//////////////// Moving About ////////////////
 
-( /* One synth per frequency, all held, each stepping to the next frequency in
-     the set. The set does not change; what moves is which layer holds which
-     member of it. */
+(
 
 {
 	var synths = ~freqs.collect { |f, i|

@@ -4,12 +4,10 @@
 //
 ////////////////////////////////////////////////////////////////
 
-/* The fourth variant, and the one that is not really a sound. Roads:
-   "The fundamental notion of grainlet synthesis is that any parameter of
+/*
+   Roads: "The fundamental notion of grainlet synthesis is that any parameter of
    synthesis can be made dependent on (or linked to) any other parameter."
-   So there is no grainlet UGen. There is a grain, and a set of rules
-   saying which of its parameters follow which. Everything below uses the
-   same SynthDef; only the linkages change. */
+*/
 
 s.boot
 
@@ -65,7 +63,7 @@ Routine({
 }).play;
 )
 
-// the same link, reversed: high grains long. Listen to how much heavier it is.
+// the same link, reversed: high grains long.
 (
 Routine({
 	200.do {
@@ -90,7 +88,7 @@ Routine({
 		Synth(\grainlet, [
 			\freq, exprand(200, 4000),
 			\dur, 0.05,
-			\depth, i.linlin(0, n, 0.0, 0.9),            // direct link to time
+			\depth, i.linlin(0, n, 0.0, 0.9),
 			\amp, i.linlin(0, n, 0.22, 0.10),
 			\pan, rrand(-1.0, 1.0)
 		]);
@@ -102,9 +100,7 @@ Routine({
 
 ///////////// Linkage 3: two links at once //////////////////////
 
-/* Duration follows frequency, and pan follows frequency as well, so the
-   cloud is spread out by register. Two rules, and the cloud now has a
-   shape you did not describe directly. */
+/* Duration and pan follows frequency */
 
 (
 Routine({
@@ -122,12 +118,7 @@ Routine({
 )
 
 
-///////////// Linkage as data, not as code //////////////////////
-
-/* The point of the technique is that the links are a structure you can
-   edit, not statements buried in a loop. Here they are a dictionary of
-   functions, one per parameter, each given the grain's index and its
-   frequency. Add a key and you have added a link. */
+/////////////////////// Linkage as data ///////////////////////////
 
 (
 ~links = (

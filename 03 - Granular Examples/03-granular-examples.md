@@ -273,6 +273,51 @@ DynKlank.ar(`[~freqs, nil, decays], sig)              // the whole set in one ba
 <span class="note">*PulsarsAdvanced.scd*, the last two sections.</span>
 
 ---
+class: light
+---
+
+# Marcin Pietruszewski
+
+A Polish composer and researcher who wrote the **New Pulsar Generator**, a SuperCollider program that continues **Curtis Roads** and **Alberto de Campo**'s Pulsar Generator of 1991.
+
+His subject is the one this class has been circling: the **threshold between rhythm and pitch**, where a train of pulses crossing about 20 per second stops being a rhythm and becomes a tone. He calls it a *continuous-discrete, tone and rhythm dynamic* and has worked on it since his tracker days.
+
+He describes the work as **composition and media archaeology at once**: a way of thinking with the history of microsound rather than past it. The program is inherited code, taken up and extended.
+
+<span class="note">nuPG has both a graphical and a live-coding interface, and a book-length manual. His 2023 Edinburgh PhD, supervised by Florian Hecker, is about it.</span>
+
+---
+class: light
+---
+
+# The New Pulsar Generator Recordings
+
+<div class="shot"><img src="/figures/pietruszewski-bandcamp-000.png" /></div>
+
+<div class="src">(fancyyyyy, 2020, mastered by Russell Haswell, with a 30-page essay by Curtis Roads)</div>
+
+---
+class: light
+---
+
+# Pulsar Pieces
+
+Every track on the record is made with nuPG, and the titles name the technique.
+
+Four apply a **sieve** after Xenakis to mask the pulsar train, so a number-theoretic rule decides which pulses survive. Two use **micro-modulation of the pulsaret envelope**. The last is a sonification of **PSR B1919+21**, the first pulsar ever detected, which makes the pun in *pulsar synthesis* literal.
+
+The piece below drives the generator with a **Gendy** modulator and a hyperbolic-cosine distribution.
+
+<span class="note">This is the masking from two slides ago and the flux from one slide ago, taken much further.</span>
+
+---
+layout: center
+class: divider
+---
+
+<Listen file="pietruszewski-interlacings.m4a">Marcin Pietruszewski, nupggendy3modulatorDistHyperbcos (interlacings), 2020</Listen>
+
+---
 
 # Grainlet
 
