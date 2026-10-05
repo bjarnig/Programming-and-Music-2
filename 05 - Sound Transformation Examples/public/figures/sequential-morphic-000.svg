@@ -1,0 +1,54 @@
+<!-- drawn by Course-Development/figures/pm2-sound-transformation-examples-figs.py
+     edit there and re-run; do not hand-edit this file -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="920" height="360" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" fill="#141414">
+<text x="460.0" y="30.0" text-anchor="middle" font-size="20" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">The same eight values, held and joined</text>
+<text x="84.0" y="66.0" text-anchor="start" font-size="16" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">sequential form</text>
+<text x="444.0" y="66.0" text-anchor="end" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">each value holds, then jumps</text>
+<path d="M84.0 280.0 L444.0 280.0" fill="none" stroke="#555" stroke-width="1.2"/>
+<path d="M84.0 90.0 L84.0 280.0" fill="none" stroke="#555" stroke-width="1.2"/>
+<path d="M84.0 220.6 L444.0 220.6" fill="none" stroke="#d4d4d4" stroke-width="0.6"/>
+<text x="76.0" y="224.6" text-anchor="end" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">1</text>
+<path d="M84.0 161.2 L444.0 161.2" fill="none" stroke="#d4d4d4" stroke-width="0.6"/>
+<text x="76.0" y="165.2" text-anchor="end" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">2</text>
+<path d="M84.0 101.9 L444.0 101.9" fill="none" stroke="#d4d4d4" stroke-width="0.6"/>
+<text x="76.0" y="105.9" text-anchor="end" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">3</text>
+<text x="84.0" y="297.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">0</text>
+<text x="174.0" y="297.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">2</text>
+<text x="264.0" y="297.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">4</text>
+<text x="354.0" y="297.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">6</text>
+<text x="444.0" y="297.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">8</text>
+<path d="M84.0 220.6 L128.6 220.6 L129.0 161.2 L173.6 161.2 L174.0 238.4 L218.6 238.4 L219.0 190.9 L263.6 190.9 L264.0 250.3 L308.6 250.3 L309.0 101.9 L353.6 101.9 L354.0 220.6 L398.6 220.6 L399.0 161.2 L443.6 161.2" fill="none" stroke="#141414" stroke-width="2.0" stroke-linejoin="round"/>
+<circle cx="84.0" cy="220.6" r="3.6" fill="#141414"/>
+<circle cx="129.0" cy="161.2" r="3.6" fill="#141414"/>
+<circle cx="174.0" cy="238.4" r="3.6" fill="#141414"/>
+<circle cx="219.0" cy="190.9" r="3.6" fill="#141414"/>
+<circle cx="264.0" cy="250.3" r="3.6" fill="#141414"/>
+<circle cx="309.0" cy="101.9" r="3.6" fill="#141414"/>
+<circle cx="354.0" cy="220.6" r="3.6" fill="#141414"/>
+<circle cx="399.0" cy="161.2" r="3.6" fill="#141414"/>
+<text x="524.0" y="66.0" text-anchor="start" font-size="16" fill="#141414" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600">morphic form</text>
+<text x="884.0" y="66.0" text-anchor="end" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-style="italic">each value is joined to the next</text>
+<path d="M524.0 280.0 L884.0 280.0" fill="none" stroke="#555" stroke-width="1.2"/>
+<path d="M524.0 90.0 L524.0 280.0" fill="none" stroke="#555" stroke-width="1.2"/>
+<path d="M524.0 220.6 L884.0 220.6" fill="none" stroke="#d4d4d4" stroke-width="0.6"/>
+<text x="516.0" y="224.6" text-anchor="end" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">1</text>
+<path d="M524.0 161.2 L884.0 161.2" fill="none" stroke="#d4d4d4" stroke-width="0.6"/>
+<text x="516.0" y="165.2" text-anchor="end" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">2</text>
+<path d="M524.0 101.9 L884.0 101.9" fill="none" stroke="#d4d4d4" stroke-width="0.6"/>
+<text x="516.0" y="105.9" text-anchor="end" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">3</text>
+<text x="524.0" y="297.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">0</text>
+<text x="614.0" y="297.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">2</text>
+<text x="704.0" y="297.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">4</text>
+<text x="794.0" y="297.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">6</text>
+<text x="884.0" y="297.0" text-anchor="middle" font-size="12" fill="#555" font-family="Menlo, Monaco, Consolas, monospace">8</text>
+<path d="M524.0 220.6 L569.0 161.2 L614.0 238.4 L659.0 190.9 L704.0 250.3 L749.0 101.9 L794.0 220.6 L839.0 161.2" fill="none" stroke="#141414" stroke-width="2.0" stroke-linejoin="round"/>
+<circle cx="524.0" cy="220.6" r="3.6" fill="#141414"/>
+<circle cx="569.0" cy="161.2" r="3.6" fill="#141414"/>
+<circle cx="614.0" cy="238.4" r="3.6" fill="#141414"/>
+<circle cx="659.0" cy="190.9" r="3.6" fill="#141414"/>
+<circle cx="704.0" cy="250.3" r="3.6" fill="#141414"/>
+<circle cx="749.0" cy="101.9" r="3.6" fill="#141414"/>
+<circle cx="794.0" cy="220.6" r="3.6" fill="#141414"/>
+<circle cx="839.0" cy="161.2" r="3.6" fill="#141414"/>
+<text x="460.0" y="338.0" text-anchor="middle" font-size="13" fill="#555" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif">time in seconds, speed as a ratio of the source</text>
+</svg>
