@@ -43,7 +43,7 @@ Chaining
 
 ---
 
-# A Runner That Waits
+# Waiting Process
 
 Last class a command was handed to the terminal and SuperCollider executed it. A chain needs each program to finish before the next one starts, so this runner waits for CDP and returns the path of the file it made.
 
@@ -64,7 +64,7 @@ Last class a command was handed to the terminal and SuperCollider executed it. A
 
 ---
 
-# A Chain in One Block
+# Sequential Processes
 
 Each call returns its output path, which is the next call's input.
 
@@ -317,14 +317,26 @@ class: divider
 CDP.sc
 
 ---
-class: light
----
 
 # CDP.sc
 
-<div class="fig tall"><img src="/figures/cdp-sc-000.png" /></div>
+<div class="cdpsc">
+<img src="/figures/cdp-sc-000.png" />
+<div>
 
-<div class="src">(CDP.sc, https://github.com/bjarnig/CDP.sc)</div>
+A SuperCollider frontend for the **Composers Desktop Project**. Each process opens in a window with a slider for every parameter.
+
+Time-domain, spectral and cross-synthesis processes, with batch processing of whole folders.
+
+<span class="note"><a href="https://github.com/bjarnig/CDP.sc">github.com/bjarnig/CDP.sc</a></span>
+
+</div>
+</div>
+
+<style>
+.cdpsc { display: flex; gap: 2.5rem; align-items: center; margin-top: 0.6rem; }
+.cdpsc img { height: 25rem; flex: none; }
+</style>
 
 ---
 
