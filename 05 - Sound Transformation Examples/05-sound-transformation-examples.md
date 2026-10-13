@@ -28,9 +28,9 @@ mdc: true
 
 # Format
 
-This is the examples class for Sound Transformation, and most of it is spent working.
+Examples class for Sound Transformation.
 
-There are three parts: **chaining** programs from SuperCollider, **breakpoint files** written by patterns, and a **family** of sounds built from one source.
+There are different parts: **chaining** programs from SuperCollider, **breakpoint files** written by patterns, a **family** of sounds built from one source and more.
 
 <span class="note">The code is in *Breakpoints.scd*, *CDPCross.scd* and *CDPGui.scd*. CDP must be installed, and `~bin` at the top of *Breakpoints.scd* must point at its programs.</span>
 
@@ -45,7 +45,7 @@ Chaining
 
 # A Runner That Waits
 
-Last class a command was handed to the terminal and SuperCollider carried on. A chain needs each program to finish before the next one starts, so this runner waits for CDP and returns the path of the file it made.
+Last class a command was handed to the terminal and SuperCollider executed it. A chain needs each program to finish before the next one starts, so this runner waits for CDP and returns the path of the file it made.
 
 ```supercollider
 ~bin = "~/cdpr8/_cdp/_cdprogs/".standardizePath;
@@ -61,8 +61,6 @@ Last class a command was handed to the terminal and SuperCollider carried on. A 
 	output
 };
 ```
-
-<span class="note">CDP refuses to overwrite a file, so the runner removes an old output first. Without that a block runs once and fails the second time.</span>
 
 ---
 
@@ -83,6 +81,8 @@ var out   = ~cdp.("pvoc synth", str, ~out ++ "chain.wav");
 
 <span class="note">8.03 seconds in and 16.1 out, which is the stretch of 2.0. Three of the five files are spectral analyses and are large.</span>
 
+---
+hide: true
 ---
 
 # Listening at Every Step
@@ -195,10 +195,13 @@ class: light
 ---
 layout: center
 class: divider
+hide: true
 ---
 
 Form
 
+---
+hide: true
 ---
 
 # Sequential and Morphic
@@ -211,12 +214,15 @@ A breakpoint file can write either.
 
 ---
 class: light
+hide: true
 ---
 
 # Held and Joined
 
 <div class="shot"><img src="/figures/sequential-morphic-000.svg" /></div>
 
+---
+hide: true
 ---
 
 # Held and Joined
@@ -238,6 +244,7 @@ var joined = [times, values].flop;
 
 ---
 class: light
+hide: true
 ---
 
 # Interpolation
@@ -246,6 +253,8 @@ class: light
 
 <div class="src">(Trevor Wishart, Audible Design, 1994, p. 105)</div>
 
+---
+hide: true
 ---
 
 # Morphic Gestures
@@ -269,6 +278,7 @@ Three motions between the same two speeds, with a different shape.
 
 ---
 class: light
+hide: true
 ---
 
 # Structure and Expression
@@ -350,7 +360,7 @@ layout: center
 class: divider
 ---
 
-A Family
+Families
 
 ---
 
@@ -407,6 +417,8 @@ The seed fixes the parameters and the breakpoints, and the log keeps them. CDP s
 <span class="note">Keep the files you like.</span>
 
 ---
+hide: true
+---
 
 # Sorting
 
@@ -432,6 +444,8 @@ The transformations are made mainly with CDP: waveset distortion (delete, repeat
 The gritty surface of the piece is a direct artefact of the manipulations.
 
 ---
+hide: true
+---
 
 # Assignment 1
 
@@ -451,13 +465,10 @@ Exercises
 # Exercises
 
 1. Write a breakpoint file with a pattern and use it as the speed or the stretch of one sound. Run it with two different seeds and compare.
-
-2. Write the same set of values as **sequential** form and as **morphic** form, and describe the difference in one sentence.
-
-3. Make a **family** of eight sounds from one source using at least two programs. Keep the log and the files.
-
-4. **Cross synthesize** two sounds from your family. Transform one of them first and cross again.
-
-5. Sort the family into three groups, name each group with one word, and put one sound from each group in an order.
+2. Apply *distort repeat* and *distort delete* to the same sound and compare how each changes the length and the surface of the **wavesets**.
+3. Run *distort divide* and *distort multiply* on a pitched sound and on a noisy one, and describe which source keeps more of its character.
+4. Chain three **waveset** distortions with `~cdp`, for example *omit*, *telescope* and *average*, and listen to the file after each step.
+5. Make a **family** of eight sounds from one source using at least two programs. Keep the log and the files.
+6. **Cross synthesize** two sounds from your family. Transform one of them first and cross again.
 
 <span class="workshop">- workshop -</span>

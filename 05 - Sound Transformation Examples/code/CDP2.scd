@@ -47,9 +47,6 @@ var freq = "1223.26";
 
 )
 
-distort average "/Users/bjarni/Courses/Classes/PMB/14-Analysis_CDP2/data/sounds/abstract/aa.wav" "/Users/bjarni/Courses/Classes/PMB/14-Analysis_CDP2/data/output/averagec.wav" /Users/bjarni/Courses/Classes/PMB/14-Analysis_CDP2/data/ output/count.txt
-
-
 
 ( // Distort average (Average the waveshape over N 'wavecycles')
 
