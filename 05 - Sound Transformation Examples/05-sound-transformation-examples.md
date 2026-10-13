@@ -300,17 +300,50 @@ pvoc synth    cross.ana     cross.wav
 <span class="note">*CDPCross.scd* runs the same steps from SuperCollider and has *Diff*, which finds the difference of two spectra. The output here is 8.02 seconds, the length of the inputs.</span>
 
 ---
+layout: center
+class: divider
+---
+
+CDP.sc
+
+---
+class: light
+---
+
+# CDP.sc
+
+<div class="fig tall"><img src="/figures/cdp-sc-000.png" /></div>
+
+<div class="src">(CDP.sc, https://github.com/bjarnig/CDP.sc)</div>
+
+---
 
 # The Quark
 
 The CDP quark wraps programs in windows with a slider for each parameter. *CDPGui.scd* has examples of the window.
 
 ```supercollider
+Quarks.install("https://github.com/bjarnig/CDP.sc");
 CDPBase.checkCDPInstalled;
 CDPBase.setCDPPath("~/cdpr8/_cdp/_cdprogs");
 ```
 
 <span class="note">If CDP works in the terminal and not in SuperCollider, the path is the usual cause, because SuperCollider does not read the shell configuration.</span>
+
+---
+
+# A Window
+
+A window is described by the program, a title, the folder of sounds and one entry per parameter. Each entry gives the flag that precedes the value and the range of its slider.
+
+```supercollider
+CDPGui("distort repeat", "Repeat", ~directory, [
+	(name: "repeat", prepend: "",   spec: ControlSpec(4, 32, \linear, 1)),
+	(name: "group",  prepend: "-c", spec: ControlSpec(10, 250, \linear, 1))
+]);
+```
+
+<span class="note">Spectral programs open in *CDPFft*, which adds Analyze and Synthesize, and two-input programs in *CDPCross*.</span>
 
 ---
 layout: center
